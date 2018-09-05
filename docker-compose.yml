@@ -1,6 +1,22 @@
-version "3"
+version: '3'
 
-php:
-    image: php:7-fpm
+services:
+  fpm:
+    build:
+      context: ./php-fpm
+    restart: ${RESTART_MODE}
     volumes:
-	- ./code:/code
+      - ./code:/var/www/html
+    container_name: php-fpm
+
+  nginx:
+    restart: ${RESTART_MODE}
+    image: nginx:latest
+    ports:
+      - "8080:80"
+    volumes:
+      - ./server_confs/exosuite.${ENVIRONMENT}.conf:/etc/nginx/conf.d/default.conf
+      - ./code:/var/www/html
+    container_name: nginx
+
+
