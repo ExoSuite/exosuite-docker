@@ -2,6 +2,7 @@ version: '3'
 
 services:
   exosuite-api-php-fpm:
+    working_dir: ${STORAGE_PATH}/${API_FOLDER_NAME}
     build:
       context: ./php-fpm/${ENVIRONMENT}
     restart: ${RESTART_MODE}
@@ -13,6 +14,7 @@ services:
 
 
   exosuite-website-php-fpm:
+    working_dir: ${STORAGE_PATH}/${WEBSITE_FOLDER_NAME}
     build:
       context: ./php-fpm/${ENVIRONMENT}
     restart: ${RESTART_MODE}
