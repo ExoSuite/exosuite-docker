@@ -6,6 +6,6 @@ RUN apt-get update && apt-get install -y libpq-dev curl && docker-php-ext-instal
 
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
-
+COPY "./${INSTALL_PATH}" "/${INSTALL_PATH}"
 
 CMD ["php-fpm"]
