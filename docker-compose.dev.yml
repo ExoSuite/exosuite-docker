@@ -32,7 +32,7 @@ services:
     - "exosuite.local:127.0.1.1"
     - "api.exosuite.local:127.0.1.1"
     ports:
-    - "80:80"
+      - ${NGINX_PORT}
     volumes:
     - ./server_confs/exosuite.${ENVIRONMENT}.conf:/etc/nginx/conf.d/default.conf
     - ./server_confs/api.exosuite.${ENVIRONMENT}.conf:/etc/nginx/conf.d/api.conf
