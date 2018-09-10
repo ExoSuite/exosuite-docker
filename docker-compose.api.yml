@@ -1,0 +1,49 @@
+version: '3'
+
+services:
+  exosuite-api-php-fpm:
+    working_dir: ${STORAGE_PATH}/${API_FOLDER_NAME}
+    build:
+      context: ./php-fpm/${ENVIRONMENT}
+      args:
+        - FOLDER_PATH=${API_FOLDER_PATH}
+        - ROOT_PATH=${STORAGE_PATH}/${API_FOLDER_NAME}
+    restart: ${RESTART_MODE}
+    container_name: exosuite-api-php-fpm-${BUILD_NUMBER}
+
+  nginx:
+    hostname: api.exosuite.${BUILD_NUMBER}.local
+    restart: ${RESTART_MODE}
+    build:
+      context: ./server_confs/${ENVIRONMENT}
+      args:
+        - FOLDER_PATH=${API_FOLDER_PATH}
+        - ROOT_PATH=${STORAGE_PATH}/${API_FOLDER_NAME}
+        - CONFIG_FILE=api.exosuite.conf
+        - SERVER_NAME=api.exosuite.${BUILD_NUMBER}.local
+        - FPM_SERVER=exosuite-api-php-fpm-${BUILD_NUMBER}
+    extra_hosts:
+    - "api.exosuite."${BUILD_NUMBER}"local:127.0.1.1"
+    ports:
+    - ${NGINX_PORT}
+    container_name: nginx-api-${BUILD_NUMBER}
+    depends_on:
+    - exosuite-api-php-fpm
+    - exosuite-api-postgres
+
+  resolver:
+    image: dvdarias/docker-hoster:latest
+    volumes:
+    - /etc/hosts:/tmp/hosts
+    - /var/run/docker.sock:/tmp/docker.sock
+    container_name: resolver-${BUILD_NUMBER}
+
+  exosuite-api-postgres:
+    restart: ${RESTART_MODE}
+    image: postgres:11-alpine
+    container_name: exosuite-api-postgres-${BUILD_NUMBER}
+    environment:
+      - POSTGRES_DB=exosuite-users-api
+      - POSTGRES_USER=exosuite
+      - POSTGRES_PASSWORD=root
+      - PGDATA=/var/lib/postgresql/data/pgdata

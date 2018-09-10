@@ -28,7 +28,7 @@ services:
 
     restart: ${RESTART_MODE}
     build:
-      context: ./server_confs
+      context: ./server_confs/${ENVIRONMENT}
       args:
         - ENVIRONMENT=${ENVIRONMENT}
         - HOSTNAME="exosuite.local api.exosuite.local"
