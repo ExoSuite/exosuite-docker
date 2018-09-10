@@ -4,7 +4,7 @@ services:
   exosuite-api-php-fpm:
     working_dir: ${STORAGE_PATH}/${API_FOLDER_NAME}
     build:
-      context: ./php-fpm/${ENVIRONMENT}
+      context: ./php-fpm
     restart: ${RESTART_MODE}
     container_name: exosuite-api-php-fpm
     volumes:
@@ -16,7 +16,7 @@ services:
   exosuite-website-php-fpm:
     working_dir: ${STORAGE_PATH}/${WEBSITE_FOLDER_NAME}
     build:
-      context: ./php-fpm/${ENVIRONMENT}
+      context: ./php-fpm
     restart: ${RESTART_MODE}
     container_name: exosuite-website-php-fpm
     volumes:
