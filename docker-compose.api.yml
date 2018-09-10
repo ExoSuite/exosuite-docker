@@ -22,20 +22,18 @@ services:
         - CONFIG_FILE=api.exosuite.conf
         - SERVER_NAME=api.exosuite.${BUILD_NUMBER}.local
         - FPM_SERVER=exosuite-api-php-fpm-${BUILD_NUMBER}
-    extra_hosts:
-    - "api.exosuite."${BUILD_NUMBER}"local:127.0.1.1"
     ports:
-    - ${NGINX_PORT}
+      - ${NGINX_PORT}
     container_name: nginx-api-${BUILD_NUMBER}
     depends_on:
-    - exosuite-api-php-fpm
-    - exosuite-api-postgres
+      - exosuite-api-php-fpm
+      - exosuite-api-postgres
 
   resolver:
     image: dvdarias/docker-hoster:latest
     volumes:
-    - /etc/hosts:/tmp/hosts
-    - /var/run/docker.sock:/tmp/docker.sock
+      - /etc/hosts:/tmp/hosts
+      - /var/run/docker.sock:/tmp/docker.sock
     container_name: resolver-${BUILD_NUMBER}
 
   exosuite-api-postgres:
