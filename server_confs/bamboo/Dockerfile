@@ -11,6 +11,8 @@ ENV ROOT_PATH $ROOT_PATH
 ENV SERVER_NAME $SERVER_NAME
 ENV DB_HOST $DB_HOST
 
+RUN apk add gettext
+
 COPY ${CONFIG_FILE} /etc/nginx/conf.d/default.template
 
 ADD snippets /etc/nginx/snippets
