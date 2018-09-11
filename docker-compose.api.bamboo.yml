@@ -20,6 +20,7 @@ services:
         - FPM_SERVER=exosuite-api-php-fpm-${BUILD_NUMBER}
         - ROOT_PATH=${STORAGE_PATH}/${API_FOLDER_NAME}
         - SERVER_NAME=api.exosuite.${BUILD_NUMBER}.local
+        - DB_HOST=exosuite-api-postgres-${BUILD_NUMBER}
     ports:
       - ${NGINX_PORT}
     container_name: nginx-api-${BUILD_NUMBER}
