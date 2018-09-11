@@ -13,14 +13,13 @@ services:
   nginx:
     hostname: api.exosuite.${BUILD_NUMBER}.local
     restart: ${RESTART_MODE}
-    environment:
-      - FPM_SERVER=exosuite-api-php-fpm-${BUILD_NUMBER}
-      - ROOT_PATH=${STORAGE_PATH}/${API_FOLDER_NAME}
-      - SERVER_NAME=api.exosuite.${BUILD_NUMBER}.local
     build:
       context: ./server_confs/${ENVIRONMENT}
       args:
         - CONFIG_FILE=api.exosuite.conf
+        - FPM_SERVER=exosuite-api-php-fpm-${BUILD_NUMBER}
+        - ROOT_PATH=${STORAGE_PATH}/${API_FOLDER_NAME}
+        - SERVER_NAME=api.exosuite.${BUILD_NUMBER}.local
     ports:
       - ${NGINX_PORT}
     container_name: nginx-api-${BUILD_NUMBER}
