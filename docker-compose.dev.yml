@@ -57,6 +57,8 @@ services:
   exosuite-api-postgres:
     restart: ${RESTART_MODE}
     image: postgres:11-alpine
+    ports:
+      - ${API_POSTGRES_PORT}
     container_name: exosuite-api-postgres
     environment:
       - POSTGRES_DB=exosuite-users-api
