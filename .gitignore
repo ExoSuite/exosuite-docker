@@ -1,2 +1,6 @@
 .env
 docker-compose.yml
+
+!/prod/users-api/docker-compose.yml
+
+!/prod/users-api/database/docker-compose.yml
