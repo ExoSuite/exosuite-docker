@@ -20,3 +20,7 @@ services:
       - exosuite-users-api-php-fpm
     networks:
       - exosuite-network-api
+
+networks:
+  exosuite-network-api:
+    driver: bridge

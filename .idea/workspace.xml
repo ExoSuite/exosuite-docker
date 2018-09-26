@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3210a84e-5e86-4379-ac7d-7a9044aa39da" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/prod/users-api/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prod/users-api/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/prod/users-api/docker-compose.yml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -86,8 +85,8 @@
           <entry key="env" value="104" />
           <entry key="gitignore" value="71" />
           <entry key="py" value="2" />
-          <entry key="txt" value="172" />
-          <entry key="yml" value="653" />
+          <entry key="txt" value="206" />
+          <entry key="yml" value="677" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -95,9 +94,9 @@
           <entry key=".env file" value="199" />
           <entry key="Dockerfile" value="770" />
           <entry key="Git file" value="71" />
-          <entry key="PLAIN_TEXT" value="174" />
+          <entry key="PLAIN_TEXT" value="208" />
           <entry key="SmartyConfig" value="185" />
-          <entry key="YAML" value="653" />
+          <entry key="YAML" value="677" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -142,8 +141,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/prod/users-api/docker-compose.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="4" column="44" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="44" />
+            <state relative-caret-position="435">
+              <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -383,7 +382,7 @@
       <workItem from="1536877278139" duration="2328000" />
       <workItem from="1537321206916" duration="673000" />
       <workItem from="1537548084576" duration="1319000" />
-      <workItem from="1537984826099" duration="4904000" />
+      <workItem from="1537984826099" duration="5137000" />
     </task>
     <task id="LOCAL-00001" summary="add conf and docker">
       <created>1536188457150</created>
@@ -525,11 +524,25 @@
       <option name="project" value="LOCAL" />
       <updated>1537995399814</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="add production">
+      <created>1538003562911</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1538003562911</updated>
+    </task>
+    <task id="LOCAL-00022" summary="remove dependency">
+      <created>1538003723773</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1538003723773</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66503000" />
+    <option name="totallyTimeSpent" value="66736000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -579,7 +592,9 @@
     <MESSAGE value="bamboo" />
     <MESSAGE value="add get text to php docker" />
     <MESSAGE value="update conf" />
-    <option name="LAST_COMMIT_MESSAGE" value="update conf" />
+    <MESSAGE value="add production" />
+    <MESSAGE value="remove dependency" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove dependency" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/server_confs/exosuite.api.prod.conf" />
@@ -733,8 +748,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/prod/users-api/docker-compose.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="44" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="44" />
+        <state relative-caret-position="435">
+          <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
         </state>
       </provider>
     </entry>
