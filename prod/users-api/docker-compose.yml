@@ -18,6 +18,5 @@ services:
     container_name: nginx-users-api
     depends_on:
       - exosuite-users-api-php-fpm
-      - exosuite-users-api-postgres
     networks:
       - exosuite-network-api
