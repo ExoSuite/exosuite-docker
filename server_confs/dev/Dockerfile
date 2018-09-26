@@ -1,8 +1,6 @@
 FROM nginx:stable-alpine
 
-ARG ENVIRONMENT
-
-COPY exosuite.${ENVIRONMENT}.conf /etc/nginx/conf.d/default.conf
-COPY api.exosuite.${ENVIRONMENT}.conf /etc/nginx/conf.d/api.conf
+COPY exosuite.conf /etc/nginx/conf.d/default.conf
+COPY api.exosuite.conf /etc/nginx/conf.d/api.conf
 
 ADD snippets /etc/nginx/snippets

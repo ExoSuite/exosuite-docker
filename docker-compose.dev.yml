@@ -29,8 +29,6 @@ services:
     restart: ${RESTART_MODE}
     build:
       context: ./server_confs/${ENVIRONMENT}
-      args:
-        - ENVIRONMENT=${ENVIRONMENT}
     ports:
       - ${NGINX_PORT}
     volumes:
