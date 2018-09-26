@@ -1,0 +1,92 @@
+version: '3'
+
+services:
+  exosuite-api-php-fpm:
+    working_dir: ${STORAGE_PATH}/${API_FOLDER_NAME}
+    build:
+      context: ./php-fpm
+    restart: ${RESTART_MODE}
+    container_name: exosuite-api-php-fpm
+    volumes:
+      - ${API_FOLDER_PATH}:${STORAGE_PATH}/${API_FOLDER_NAME}
+      - /etc/hosts:/etc/hosts
+    networks:
+      - exosuite-network
+
+
+  exosuite-website-php-fpm:
+    working_dir: ${STORAGE_PATH}/${WEBSITE_FOLDER_NAME}
+    build:
+      context: ./php-fpm
+    restart: ${RESTART_MODE}
+    container_name: exosuite-website-php-fpm
+    volumes:
+      - ${WEBSITE_FOLDER_PATH}:${STORAGE_PATH}/${WEBSITE_FOLDER_NAME}
+      - /etc/hosts:/etc/hosts
+    networks:
+      - exosuite-network
+
+  nginx:
+    hostname: exosuite.local api.exosuite.local
+    restart: ${RESTART_MODE}
+    build:
+      context: ./server_confs/${ENVIRONMENT}
+      args:
+        - ENVIRONMENT=${ENVIRONMENT}
+    ports:
+      - ${NGINX_PORT}
+    volumes:
+      - ${API_FOLDER_PATH}:${STORAGE_PATH}/${API_FOLDER_NAME}
+      - ${WEBSITE_FOLDER_PATH}:${STORAGE_PATH}/${WEBSITE_FOLDER_NAME}
+    container_name: nginx
+    depends_on:
+      - exosuite-api-php-fpm
+      - exosuite-website-php-fpm
+      - exosuite-api-postgres
+      - exosuite-website-postgres
+    networks:
+      - exosuite-network
+
+  resolver:
+    image: dvdarias/docker-hoster:latest
+    volumes:
+      - /etc/hosts:/tmp/hosts
+      - /var/run/docker.sock:/tmp/docker.sock
+    networks:
+      - exosuite-network
+    container_name: resolver
+
+  exosuite-api-postgres:
+    restart: ${RESTART_MODE}
+    image: postgres:11-alpine
+    ports:
+      - ${API_POSTGRES_PORT}
+    container_name: exosuite-api-postgres
+    environment:
+      - POSTGRES_DB=exosuite-users-api
+      - POSTGRES_USER=exosuite
+      - POSTGRES_PASSWORD=root
+      - PGDATA=/var/lib/postgresql/data/pgdata
+    networks:
+      - exosuite-network
+    volumes:
+      - ${STORAGE_PATH}/exosuite-api-postgres:/var/lib/postgresql/data/pgdata
+
+  exosuite-website-postgres:
+    restart: ${RESTART_MODE}
+    image: postgres:11-alpine
+    container_name: exosuite-website-postgres
+    environment:
+      - POSTGRES_DB=exosuite-website
+      - POSTGRES_USER=exosuite
+      - POSTGRES_PASSWORD=root
+      - PGDATA=/var/lib/postgresql/data/pgdata
+    networks:
+      - exosuite-network
+    volumes:
+      - ${STORAGE_PATH}/exosuite-website-postgres:/var/lib/postgresql/data/pgdata
+
+
+networks:
+  exosuite-network:
+    driver: bridge
