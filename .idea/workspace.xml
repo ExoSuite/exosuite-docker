@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3210a84e-5e86-4379-ac7d-7a9044aa39da" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/server_confs/staging/api.exosuite.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_confs/staging/exosuite.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_confs/staging/snippets/fastcgi-php.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_confs/staging/api.exosuite.conf" beforeDir="false" afterPath="$PROJECT_DIR$/server_confs/staging/api.exosuite.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_confs/staging/exosuite.conf" beforeDir="false" afterPath="$PROJECT_DIR$/server_confs/staging/exosuite.conf" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -88,7 +88,7 @@
           <entry key="gitignore" value="71" />
           <entry key="py" value="2" />
           <entry key="txt" value="232" />
-          <entry key="yml" value="714" />
+          <entry key="yml" value="752" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -98,7 +98,7 @@
           <entry key="Git file" value="71" />
           <entry key="PLAIN_TEXT" value="234" />
           <entry key="SmartyConfig" value="206" />
-          <entry key="YAML" value="714" />
+          <entry key="YAML" value="752" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -109,11 +109,11 @@
           <entry key="conf" value="27" />
           <entry key="dev" value="3" />
           <entry key="env" value="4" />
-          <entry key="gitignore" value="2" />
+          <entry key="gitignore" value="3" />
           <entry key="prod" value="1" />
           <entry key="py" value="1" />
           <entry key="sh" value="2" />
-          <entry key="yml" value="19" />
+          <entry key="yml" value="20" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -121,21 +121,30 @@
           <entry key=".env file" value="13" />
           <entry key="Bash" value="2" />
           <entry key="Dockerfile" value="26" />
-          <entry key="Git file" value="2" />
+          <entry key="Git file" value="3" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="SmartyConfig" value="27" />
-          <entry key="YAML" value="19" />
+          <entry key="YAML" value="20" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/prod/users-api/docker-compose.yml">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/staging/users-api/docker-compose.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="7" column="46" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
+            <state relative-caret-position="322">
+              <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="115">
+              <caret line="5" column="44" lean-forward="true" selection-start-line="5" selection-start-column="44" selection-end-line="5" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -148,26 +157,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server_confs/staging/api.exosuite.conf">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/server_confs/staging/exosuite.conf">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="11" column="43" lean-forward="true" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
+            <state relative-caret-position="232">
+              <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php-fpm/Dockerfile">
+        <entry file="file://$PROJECT_DIR$/server_confs/staging/exosuite.conf">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+            <state relative-caret-position="275">
+              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
             </state>
           </provider>
         </entry>
@@ -284,12 +284,13 @@
         <option value="$PROJECT_DIR$/prod/docker-compose.prod.yml" />
         <option value="$PROJECT_DIR$/prod/users-api/docker-compose.prod.yml" />
         <option value="$PROJECT_DIR$/docker-compose.yml" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/server_confs/prod/api.exosuite.conf" />
         <option value="$PROJECT_DIR$/prod/users-api/database/docker-compose.yml" />
         <option value="$PROJECT_DIR$/prod/users-api/docker-compose.yml" />
         <option value="$PROJECT_DIR$/server_confs/staging/api.exosuite.conf" />
         <option value="$PROJECT_DIR$/server_confs/staging/exosuite.conf" />
+        <option value="$PROJECT_DIR$/staging/users-api/docker-compose.yml" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -339,6 +340,17 @@
             <path>
               <item name="exosuite-docker" type="b2602c69:ProjectViewProjectNode" />
               <item name="exosuite-docker" type="462c0819:PsiDirectoryNode" />
+              <item name="prod" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="exosuite-docker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="exosuite-docker" type="462c0819:PsiDirectoryNode" />
+              <item name="prod" type="462c0819:PsiDirectoryNode" />
+              <item name="users-api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="exosuite-docker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="exosuite-docker" type="462c0819:PsiDirectoryNode" />
               <item name="server_confs" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -350,9 +362,13 @@
             <path>
               <item name="exosuite-docker" type="b2602c69:ProjectViewProjectNode" />
               <item name="exosuite-docker" type="462c0819:PsiDirectoryNode" />
-              <item name="server_confs" type="462c0819:PsiDirectoryNode" />
               <item name="staging" type="462c0819:PsiDirectoryNode" />
-              <item name="snippets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="exosuite-docker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="exosuite-docker" type="462c0819:PsiDirectoryNode" />
+              <item name="staging" type="462c0819:PsiDirectoryNode" />
+              <item name="users-api" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -377,9 +393,9 @@
       <recent name="$PROJECT_DIR$/server_confs/prod/api" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/server_confs" />
       <recent name="$PROJECT_DIR$/prod/users-api/database" />
-      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/server_confs/dev" />
       <recent name="$PROJECT_DIR$/php-fpm" />
     </key>
@@ -421,7 +437,7 @@
       <workItem from="1537548084576" duration="1319000" />
       <workItem from="1537984826099" duration="8759000" />
       <workItem from="1538058447947" duration="7000" />
-      <workItem from="1538060073547" duration="53000" />
+      <workItem from="1538060073547" duration="1030000" />
     </task>
     <task id="LOCAL-00001" summary="add conf and docker">
       <created>1536188457150</created>
@@ -605,11 +621,18 @@
       <option name="project" value="LOCAL" />
       <updated>1538017302607</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="add prod volume">
+      <created>1538060146165</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1538060146165</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70418000" />
+    <option name="totallyTimeSpent" value="71395000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -761,13 +784,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server_confs/dev/api.exosuite.conf">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
@@ -821,27 +837,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/prod/users-api/docker-compose.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="7" column="46" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server_confs/staging/snippets/fastcgi-php.conf">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/server_confs/staging/api.exosuite.conf">
+    <entry file="file://$PROJECT_DIR$/prod/users-api/docker-compose.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+        <state relative-caret-position="293">
+          <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server_confs/staging/exosuite.conf">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="43" lean-forward="true" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
+        <state relative-caret-position="275">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="44" lean-forward="true" selection-start-line="5" selection-start-column="44" selection-end-line="5" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server_confs/staging/api.exosuite.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/staging/users-api/docker-compose.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
         </state>
       </provider>
     </entry>
