@@ -85,8 +85,8 @@
           <entry key="env" value="104" />
           <entry key="gitignore" value="71" />
           <entry key="py" value="2" />
-          <entry key="txt" value="242" />
-          <entry key="yml" value="752" />
+          <entry key="txt" value="265" />
+          <entry key="yml" value="757" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -94,9 +94,9 @@
           <entry key=".env file" value="199" />
           <entry key="Dockerfile" value="770" />
           <entry key="Git file" value="71" />
-          <entry key="PLAIN_TEXT" value="244" />
+          <entry key="PLAIN_TEXT" value="267" />
           <entry key="SmartyConfig" value="206" />
-          <entry key="YAML" value="752" />
+          <entry key="YAML" value="757" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -132,8 +132,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/staging/users-api/docker-compose.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
-              <caret line="32" column="46" selection-start-line="32" selection-start-column="46" selection-end-line="32" selection-end-column="46" />
+            <state relative-caret-position="223">
+              <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -417,7 +417,7 @@
       <workItem from="1537548084576" duration="1319000" />
       <workItem from="1537984826099" duration="8759000" />
       <workItem from="1538058447947" duration="7000" />
-      <workItem from="1538060073547" duration="1961000" />
+      <workItem from="1538060073547" duration="1989000" />
     </task>
     <task id="LOCAL-00001" summary="add conf and docker">
       <created>1536188457150</created>
@@ -622,11 +622,18 @@
       <option name="project" value="LOCAL" />
       <updated>1538062604079</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="remove volume for pgsql">
+      <created>1538071132325</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1538071132325</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72326000" />
+    <option name="totallyTimeSpent" value="72354000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -682,7 +689,8 @@
     <MESSAGE value="add prod volume" />
     <MESSAGE value="add staging volume" />
     <MESSAGE value="fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix" />
+    <MESSAGE value="remove volume for pgsql" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove volume for pgsql" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/server_confs/exosuite.api.prod.conf" />
@@ -865,8 +873,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/staging/users-api/docker-compose.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="32" column="46" selection-start-line="32" selection-start-column="46" selection-end-line="32" selection-end-column="46" />
+        <state relative-caret-position="223">
+          <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
         </state>
       </provider>
     </entry>
