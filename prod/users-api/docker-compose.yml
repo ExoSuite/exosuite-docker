@@ -7,17 +7,32 @@ services:
     restart: unless-stopped
     container_name: exosuite-users-api-php-fpm
     networks:
-      - exosuite-network-api
+    - exosuite-network-api
 
   nginx-users-api:
     hostname: api.exosuite.local
     restart: unless-stopped
     image: exosuite.fr:5000/exosuite/exosuite-users-api-nginx
     ports:
-      - "80"
+    - "80"
     container_name: nginx-users-api
     depends_on:
-      - exosuite-users-api-php-fpm
+    - exosuite-users-api-php-fpm
+    networks:
+    - exosuite-network-api
+  exosuite-users-api-postgres:
+    restart: always
+    image: postgres:11-alpine
+    ports:
+      - 5432
+    container_name: exosuite-users-api-postgres
+    environment:
+      - POSTGRES_DB=exosuite-users-api
+      - POSTGRES_USER=exosuite
+      - POSTGRES_PASSWORD=root
+      - PGDATA=/var/lib/postgresql/data/pgdata
+    volumes:
+      - /var/lib/postgresql/exosuite-users-api-postgres:/var/lib/postgresql/data/pgdata
     networks:
       - exosuite-network-api
 
