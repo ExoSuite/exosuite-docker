@@ -24,8 +24,6 @@ services:
   exosuite-users-api-postgres:
     restart: always
     image: postgres:11-alpine
-    ports:
-    - 5432
     container_name: exosuite-users-api-postgres
     environment:
     - POSTGRES_DB=exosuite-users-api
