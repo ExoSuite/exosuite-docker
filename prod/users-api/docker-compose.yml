@@ -6,6 +6,8 @@ services:
     image: exosuite.fr:5000/exosuite/exosuite-users-api-php-fpm
     restart: unless-stopped
     container_name: exosuite-users-api-php-fpm
+    volumes:
+      - /var/www/exosuite-users-api/storage:/var/www/exosuite-users-api/storage
     networks:
     - exosuite-network-api
 
