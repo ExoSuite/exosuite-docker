@@ -15,8 +15,6 @@ services:
     hostname: api.exosuite.local
     restart: unless-stopped
     image: dev.exosuite.fr:5000/exosuite/exosuite-users-api-nginx
-    ports:
-    - "80"
     container_name: nginx-users-api
     depends_on:
     - exosuite-users-api-php-fpm
