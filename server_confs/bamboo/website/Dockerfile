@@ -21,7 +21,7 @@ RUN apk add gettext
 COPY api.exosuite.conf /etc/nginx/conf.d/api.template
 COPY exosuite.conf /etc/nginx/conf.d/website.template
 
-ADD ../snippets /etc/nginx/snippets
+ADD snippets /etc/nginx/snippets
 
 RUN envsubst \$API_FPM_SERVER,\$API_SERVER_NAME,\$API_ROOT_PATH < /etc/nginx/conf.d/website.template > /etc/nginx/conf.d/default.conf
 
