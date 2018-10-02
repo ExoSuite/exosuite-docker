@@ -31,7 +31,7 @@ services:
         - WEBSITE_ROOT_PATH=${STORAGE_PATH}/${WEBSITE_FOLDER_NAME}
         - API_SERVER_NAME=api.exosuite.${BUILD_NUMBER}.local
         - WEBSITE_SERVER_NAME=exosuite.${BUILD_NUMBER}.local
-    container_name: nginx-api-${BUILD_NUMBER}
+    container_name: nginx-${BUILD_NUMBER}
     depends_on:
       - exosuite-api-php-fpm
       - exosuite-api-postgres
