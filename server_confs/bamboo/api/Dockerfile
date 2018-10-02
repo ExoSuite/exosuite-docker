@@ -15,7 +15,7 @@ RUN apk add gettext
 
 COPY ${CONFIG_FILE} /etc/nginx/conf.d/default.template
 
-ADD snippets /etc/nginx/snippets
+ADD ../snippets /etc/nginx/snippets
 
 RUN envsubst \$FPM_SERVER,\$SERVER_NAME,\$ROOT_PATH < /etc/nginx/conf.d/default.template > /etc/nginx/conf.d/default.conf
 

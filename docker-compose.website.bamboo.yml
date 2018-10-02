@@ -1,0 +1,69 @@
+version: '3'
+
+services:
+  exosuite-api-php-fpm:
+    working_dir: ${STORAGE_PATH}/${API_FOLDER_NAME}
+    build:
+      context: ./php-fpm
+    restart: ${RESTART_MODE}
+    container_name: exosuite-api-php-fpm-${BUILD_NUMBER}
+    volumes:
+      - ${API_FOLDER_PATH}:${STORAGE_PATH}/${API_FOLDER_NAME}
+
+  exosuite-website-php-fpm:
+    working_dir: ${STORAGE_PATH}/${WEBSITE_FOLDER_NAME}
+    build:
+      context: ./php-fpm
+    restart: ${RESTART_MODE}
+    container_name: exosuite-website-php-fpm-${BUILD_NUMBER}
+    volumes:
+      - ${WEBSITE_FOLDER_NAME}:${STORAGE_PATH}/${WEBSITE_FOLDER_NAME}
+
+  nginx:
+    hostname: api.exosuite.${BUILD_NUMBER}.local exosuite.${BUILD_NUMBER}.local
+    restart: ${RESTART_MODE}
+    build:
+      context: ./server_confs/${ENVIRONMENT}/website
+      args:
+        - API_FPM_SERVER=exosuite-api-php-fpm-${BUILD_NUMBER}
+        - WEBSITE_FPM_SERVER=exosuite-api-php-fpm-${BUILD_NUMBER}
+        - API_ROOT_PATH=${STORAGE_PATH}/${API_FOLDER_NAME}
+        - WEBSITE_ROOT_PATH=${STORAGE_PATH}/${WEBSITE_FOLDER_NAME}
+        - API_SERVER_NAME=api.exosuite.${BUILD_NUMBER}.local
+        - WEBSITE_SERVER_NAME=exosuite.${BUILD_NUMBER}.local
+    container_name: nginx-api-${BUILD_NUMBER}
+    depends_on:
+      - exosuite-api-php-fpm
+      - exosuite-api-postgres
+      - exosuite-website-php-fpm
+      - exosuite-website-postgres
+    volumes:
+      - ${API_FOLDER_PATH}:${STORAGE_PATH}/${API_FOLDER_NAME}
+      - ${WEBSITE_FOLDER_NAME}:${STORAGE_PATH}/${WEBSITE_FOLDER_NAME}
+
+  resolver:
+    image: dvdarias/docker-hoster:latest
+    volumes:
+      - /etc/hosts:/tmp/hosts
+      - /var/run/docker.sock:/tmp/docker.sock
+    container_name: resolver-${BUILD_NUMBER}
+
+  exosuite-api-postgres:
+    restart: ${RESTART_MODE}
+    image: postgres:11-alpine
+    container_name: exosuite-api-postgres-${BUILD_NUMBER}
+    environment:
+      - POSTGRES_DB=exosuite-users-api
+      - POSTGRES_USER=exosuite
+      - POSTGRES_PASSWORD=root
+      - PGDATA=/var/lib/postgresql/data/pgdata
+
+  exosuite-website-postgres:
+    restart: ${RESTART_MODE}
+    image: postgres:11-alpine
+    container_name: exosuite-website-postgres-${BUILD_NUMBER}
+    environment:
+      - POSTGRES_DB=exosuite-website
+      - POSTGRES_USER=exosuite
+      - POSTGRES_PASSWORD=root
+      - PGDATA=/var/lib/postgresql/data/pgdata
