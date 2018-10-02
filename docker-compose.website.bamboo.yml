@@ -41,13 +41,6 @@ services:
       - ${API_FOLDER_PATH}:${STORAGE_PATH}/${API_FOLDER_NAME}
       - ${WEBSITE_FOLDER_PATH}:${STORAGE_PATH}/${WEBSITE_FOLDER_NAME}
 
-  resolver:
-    image: dvdarias/docker-hoster:latest
-    volumes:
-      - /etc/hosts:/tmp/hosts
-      - /var/run/docker.sock:/tmp/docker.sock
-    container_name: resolver-${BUILD_NUMBER}
-
   exosuite-api-postgres:
     restart: ${RESTART_MODE}
     image: postgres:11-alpine
