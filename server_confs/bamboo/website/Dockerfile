@@ -26,6 +26,3 @@ ADD snippets /etc/nginx/snippets
 RUN envsubst \$API_FPM_SERVER,\$API_SERVER_NAME,\$API_ROOT_PATH < /etc/nginx/conf.d/website.template > /etc/nginx/conf.d/default.conf
 
 RUN envsubst \$WEBSITE_SERVER_NAME,\$WEBSITE_ROOT_PATH,\$WEBSITE_FPM_SERVER < /etc/nginx/conf.d/api.template > /etc/nginx/conf.d/api.conf
-
-RUN rm /etc/nginx/conf.d/api.template
-RUN rm /etc/nginx/conf.d/website.template

@@ -5,7 +5,6 @@ services:
     working_dir: ${STORAGE_PATH}/${API_FOLDER_NAME}
     build:
       context: ./php-fpm
-    restart: ${RESTART_MODE}
     container_name: exosuite-api-php-fpm-${BUILD_NUMBER}
     volumes:
       - ${API_FOLDER_PATH}:${STORAGE_PATH}/${API_FOLDER_NAME}
@@ -14,19 +13,17 @@ services:
     working_dir: ${STORAGE_PATH}/${WEBSITE_FOLDER_NAME}
     build:
       context: ./php-fpm
-    restart: ${RESTART_MODE}
     container_name: exosuite-website-php-fpm-${BUILD_NUMBER}
     volumes:
       - ${WEBSITE_FOLDER_PATH}:${STORAGE_PATH}/${WEBSITE_FOLDER_NAME}
 
   nginx:
     hostname: api.exosuite.${BUILD_NUMBER}.local exosuite.${BUILD_NUMBER}.local
-    restart: ${RESTART_MODE}
     build:
       context: ./server_confs/${ENVIRONMENT}/website
       args:
         - API_FPM_SERVER=exosuite-api-php-fpm-${BUILD_NUMBER}
-        - WEBSITE_FPM_SERVER=exosuite-api-php-fpm-${BUILD_NUMBER}
+        - WEBSITE_FPM_SERVER=exosuite-website-php-fpm-${BUILD_NUMBER}
         - API_ROOT_PATH=${STORAGE_PATH}/${API_FOLDER_NAME}
         - WEBSITE_ROOT_PATH=${STORAGE_PATH}/${WEBSITE_FOLDER_NAME}
         - API_SERVER_NAME=api.exosuite.${BUILD_NUMBER}.local
@@ -42,7 +39,6 @@ services:
       - ${WEBSITE_FOLDER_PATH}:${STORAGE_PATH}/${WEBSITE_FOLDER_NAME}
 
   exosuite-api-postgres:
-    restart: ${RESTART_MODE}
     image: postgres:11-alpine
     container_name: exosuite-api-postgres-${BUILD_NUMBER}
     environment:
@@ -52,7 +48,6 @@ services:
       - PGDATA=/var/lib/postgresql/data/pgdata
 
   exosuite-website-postgres:
-    restart: ${RESTART_MODE}
     image: postgres:11-alpine
     container_name: exosuite-website-postgres-${BUILD_NUMBER}
     environment:

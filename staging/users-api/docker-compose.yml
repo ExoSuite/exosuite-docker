@@ -21,6 +21,7 @@ services:
     - exosuite-users-api-postgres
     networks:
     - exosuite-network-api
+
   exosuite-users-api-postgres:
     restart: always
     image: postgres:11-alpine
