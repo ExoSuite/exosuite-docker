@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3210a84e-5e86-4379-ac7d-7a9044aa39da" name="Default Changelist" comment="potential fix for docker-compose of website">
+    <list default="true" id="3210a84e-5e86-4379-ac7d-7a9044aa39da" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.api.bamboo.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.api.bamboo.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.dev.windows.vmware.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.dev.windows.vmware.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.dev.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.website.bamboo.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.website.bamboo.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_confs/bamboo/website/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/server_confs/bamboo/website/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_confs/bamboo/website/api.exosuite.conf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_confs/bamboo/website/exosuite.conf" beforeDir="false" afterPath="$PROJECT_DIR$/server_confs/bamboo/website/exosuite.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prod/users-api/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/prod/users-api/docker-compose.yml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -88,8 +89,8 @@
           <entry key="env" value="104" />
           <entry key="gitignore" value="71" />
           <entry key="py" value="2" />
-          <entry key="txt" value="399" />
-          <entry key="yml" value="922" />
+          <entry key="txt" value="468" />
+          <entry key="yml" value="936" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -97,9 +98,9 @@
           <entry key=".env file" value="202" />
           <entry key="Dockerfile" value="819" />
           <entry key="Git file" value="71" />
-          <entry key="PLAIN_TEXT" value="401" />
+          <entry key="PLAIN_TEXT" value="470" />
           <entry key="SmartyConfig" value="224" />
-          <entry key="YAML" value="922" />
+          <entry key="YAML" value="936" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -114,7 +115,7 @@
           <entry key="prod" value="1" />
           <entry key="py" value="1" />
           <entry key="sh" value="2" />
-          <entry key="yml" value="30" />
+          <entry key="yml" value="31" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -125,7 +126,7 @@
           <entry key="Git file" value="3" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="SmartyConfig" value="39" />
-          <entry key="YAML" value="30" />
+          <entry key="YAML" value="31" />
         </counts>
       </usages-collector>
     </session>
@@ -145,7 +146,7 @@
         <entry file="file://$PROJECT_DIR$/server_confs/bamboo/website/Dockerfile">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="483">
-              <caret line="21" column="41" lean-forward="true" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
+              <caret line="21" column="41" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -153,8 +154,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/docker-compose.website.bamboo.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="515">
-              <caret line="33" column="20" lean-forward="true" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="45" />
+            <state relative-caret-position="184">
+              <caret line="8" column="44" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docker-compose.api.bamboo.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="381">
+              <caret line="28" column="59" selection-start-line="28" selection-start-column="59" selection-end-line="28" selection-end-column="59" />
             </state>
           </provider>
         </entry>
@@ -181,7 +191,7 @@
         <entry file="file://$PROJECT_DIR$/docker-compose.dev.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="303">
-              <caret line="33" column="4" selection-start-line="33" selection-start-column="4" selection-end-line="35" selection-end-column="69" />
+              <caret line="33" column="4" selection-start-line="33" selection-start-column="4" selection-end-line="35" selection-end-column="67" />
             </state>
           </provider>
         </entry>
@@ -190,7 +200,7 @@
         <entry file="file://$PROJECT_DIR$/docker-compose.dev.windows.vmware.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="448">
-              <caret line="71" selection-start-line="71" selection-end-line="72" selection-end-column="77" />
+              <caret line="71" selection-start-line="71" selection-end-line="72" selection-end-column="75" />
             </state>
           </provider>
         </entry>
@@ -218,6 +228,7 @@
       <find>API_FOLDER_PATH</find>
       <find>API</find>
       <find>exosuite-api-postgres</find>
+      <find>exosuite-users-api</find>
     </findStrings>
     <replaceStrings>
       <replace>- ${API_FOLDER_PATH}:${STORAGE_PATH}/${API_FOLDER_NAME}</replace>
@@ -370,7 +381,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.YAML" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -427,7 +438,7 @@
       <workItem from="1538058447947" duration="7000" />
       <workItem from="1538060073547" duration="2412000" />
       <workItem from="1538424235120" duration="269000" />
-      <workItem from="1538504651874" duration="9492000" />
+      <workItem from="1538504651874" duration="9995000" />
     </task>
     <task id="LOCAL-00001" summary="add conf and docker">
       <created>1536188457150</created>
@@ -695,15 +706,28 @@
       <option name="project" value="LOCAL" />
       <updated>1538530071067</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="will only build exosuite-website instead of exosuite-website and exosuite-users-api">
+      <created>1538531808640</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1538531808640</updated>
+    </task>
+    <task id="LOCAL-00040" summary="fix">
+      <created>1538532256571</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1538532256571</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82538000" />
+    <option name="totallyTimeSpent" value="83041000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23462088" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -736,7 +760,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="dev env ok" />
     <MESSAGE value="add working dir" />
     <MESSAGE value="add nginx port to env" />
     <MESSAGE value="add composer" />
@@ -757,11 +780,12 @@
     <MESSAGE value="remove volume for pgsql" />
     <MESSAGE value="remove port for pgsql" />
     <MESSAGE value="pre add website build" />
-    <MESSAGE value="fix" />
     <MESSAGE value="fix for website build" />
     <MESSAGE value="remove resolver" />
     <MESSAGE value="potential fix for docker-compose of website" />
-    <option name="LAST_COMMIT_MESSAGE" value="potential fix for docker-compose of website" />
+    <MESSAGE value="will only build exosuite-website instead of exosuite-website and exosuite-users-api" />
+    <MESSAGE value="fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/server_confs/exosuite.api.prod.conf" />
@@ -904,7 +928,7 @@
     <entry file="file://$PROJECT_DIR$/docker-compose.dev.windows.vmware.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="448">
-          <caret line="71" selection-start-line="71" selection-end-line="72" selection-end-column="77" />
+          <caret line="71" selection-start-line="71" selection-end-line="72" selection-end-column="75" />
         </state>
       </provider>
     </entry>
@@ -932,7 +956,7 @@
     <entry file="file://$PROJECT_DIR$/docker-compose.dev.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="303">
-          <caret line="33" column="4" selection-start-line="33" selection-start-column="4" selection-end-line="35" selection-end-column="69" />
+          <caret line="33" column="4" selection-start-line="33" selection-start-column="4" selection-end-line="35" selection-end-column="67" />
         </state>
       </provider>
     </entry>
@@ -943,17 +967,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docker-compose.api.bamboo.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="467">
-          <caret line="28" column="61" selection-start-line="28" selection-start-column="61" selection-end-line="28" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server_confs/bamboo/website/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="483">
-          <caret line="21" column="41" lean-forward="true" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
+          <caret line="21" column="41" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
         </state>
       </provider>
     </entry>
@@ -971,10 +988,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/docker-compose.api.bamboo.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="381">
+          <caret line="28" column="59" selection-start-line="28" selection-start-column="59" selection-end-line="28" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/docker-compose.website.bamboo.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="515">
-          <caret line="33" column="20" lean-forward="true" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="45" />
+        <state relative-caret-position="184">
+          <caret line="8" column="44" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="44" />
         </state>
       </provider>
     </entry>

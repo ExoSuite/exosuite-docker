@@ -9,7 +9,7 @@ services:
     volumes:
       - /var/www/exosuite-users-api/storage:/var/www/exosuite-users-api/storage
     networks:
-    - exosuite-network-api
+      - exosuite-network-api
 
   nginx-users-api:
     hostname: api.exosuite.local
@@ -17,9 +17,9 @@ services:
     image: exosuite.fr:5000/exosuite/exosuite-users-api-nginx
     container_name: nginx-users-api
     depends_on:
-    - exosuite-users-api-php-fpm
+      - exosuite-users-api-php-fpm
     networks:
-    - exosuite-network-api
+      - exosuite-network-api
   exosuite-users-api-postgres:
     restart: always
     image: postgres:11-alpine
