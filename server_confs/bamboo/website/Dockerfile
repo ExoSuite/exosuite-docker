@@ -1,28 +1,22 @@
 FROM nginx:stable-alpine
 
-ARG API_FPM_SERVER
-ARG API_ROOT_PATH
-ARG API_SERVER_NAME
+ARG CONFIG_FILE
+ARG FPM_SERVER
+ARG ROOT_PATH
+ARG SERVER_NAME
+ARG DB_HOST
 
-ARG WEBSITE_FPM_SERVER
-ARG WEBSITE_ROOT_PATH
-ARG WEBSITE_SERVER_NAME
-
-ENV API_FPM_SERVER $API_FPM_SERVER
-ENV API_ROOT_PATH $API_ROOT_PATH
-ENV API_SERVER_NAME $API_SERVER_NAME
-
-ENV WEBSITE_SERVER_NAME $WEBSITE_SERVER_NAME
-ENV WEBSITE_ROOT_PATH $WEBSITE_ROOT_PATH
-ENV WEBSITE_FPM_SERVER $WEBSITE_FPM_SERVER
+ENV FPM_SERVER $FPM_SERVER
+ENV ROOT_PATH $ROOT_PATH
+ENV SERVER_NAME $SERVER_NAME
+ENV DB_HOST $DB_HOST
 
 RUN apk add gettext
 
-COPY api.exosuite.conf /etc/nginx/conf.d/api.template
-COPY exosuite.conf /etc/nginx/conf.d/website.template
+COPY ${CONFIG_FILE} /etc/nginx/conf.d/default.template
 
 ADD snippets /etc/nginx/snippets
 
-RUN envsubst \$API_FPM_SERVER,\$API_SERVER_NAME,\$API_ROOT_PATH < /etc/nginx/conf.d/website.template > /etc/nginx/conf.d/default.conf
+RUN envsubst \$FPM_SERVER,\$SERVER_NAME,\$ROOT_PATH < /etc/nginx/conf.d/default.template > /etc/nginx/conf.d/default.conf
 
-RUN envsubst \$WEBSITE_SERVER_NAME,\$WEBSITE_ROOT_PATH,\$WEBSITE_FPM_SERVER < /etc/nginx/conf.d/api.template > /etc/nginx/conf.d/api.conf
+RUN rm /etc/nginx/conf.d/default.template
