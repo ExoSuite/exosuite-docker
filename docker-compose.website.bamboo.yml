@@ -33,7 +33,7 @@ services:
     image: postgres:11-alpine
     container_name: exosuite-website-postgres-${BUILD_NUMBER}
     environment:
-      - POSTGRES_DB=exosuite-users-api
+      - POSTGRES_DB=exosuite-website
       - POSTGRES_USER=exosuite
       - POSTGRES_PASSWORD=root
       - PGDATA=/var/lib/postgresql/data/pgdata
