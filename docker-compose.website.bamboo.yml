@@ -9,8 +9,6 @@ services:
     container_name: exosuite-website-php-fpm-${BUILD_NUMBER}
     volumes:
       - ${WEBSITE_FOLDER_PATH}:${STORAGE_PATH}/${WEBSITE_FOLDER_NAME}
-    networks:
-      - exosuite-website-build
 
   nginx-website:
     hostname: exosuite.${BUILD_NUMBER}.local
@@ -29,8 +27,6 @@ services:
       - exosuite-website-postgres
     volumes:
       - ${WEBSITE_FOLDER_PATH}:${STORAGE_PATH}/${WEBSITE_FOLDER_NAME}
-    networks:
-      - exosuite-website-build
 
   exosuite-website-postgres:
     restart: ${RESTART_MODE}
@@ -41,9 +37,3 @@ services:
       - POSTGRES_USER=exosuite
       - POSTGRES_PASSWORD=root
       - PGDATA=/var/lib/postgresql/data/pgdata
-    networks:
-      - exosuite-website-build
-
-networks:
-  exosuite-website-build:
-    driver: bridge
