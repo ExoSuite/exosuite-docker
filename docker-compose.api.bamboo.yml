@@ -27,8 +27,6 @@ services:
       - exosuite-users-api-postgres
     volumes:
       - ${API_FOLDER_PATH}:${STORAGE_PATH}/${API_FOLDER_NAME}
-    networks:
-      - exosuite-network
 
   exosuite-users-api-postgres:
     restart: ${RESTART_MODE}
