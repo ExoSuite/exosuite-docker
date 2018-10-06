@@ -12,17 +12,6 @@ services:
     networks:
       - exosuite-website-build
 
-  exosuite-users-api-php-fpm:
-    working_dir: ${STORAGE_PATH}/${API_FOLDER_NAME}
-    build:
-      context: ./php-fpm
-    restart: ${RESTART_MODE}
-    container_name: exosuite-users-api-php-fpm-${BUILD_NUMBER}
-    volumes:
-      - ${API_FOLDER_PATH}:${STORAGE_PATH}/${API_FOLDER_NAME}
-    networks:
-      - exosuite-website-build
-
   nginx-website:
     hostname: exosuite.${BUILD_NUMBER}.local
     restart: ${RESTART_MODE}

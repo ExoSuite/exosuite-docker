@@ -1,6 +1,9 @@
 version: '3'
 
 services:
+
+  ## API ##
+
   exosuite-users-api-php-fpm:
     working_dir: /var/www/exosuite-users-api
     image: dev.exosuite.fr:5000/exosuite/exosuite-users-api-php-fpm
@@ -29,10 +32,12 @@ services:
     environment:
       - POSTGRES_DB=exosuite-users-api
       - POSTGRES_USER=exosuite
-      - POSTGRES_PASSWORD=root
+      - POSTGRES_PASSWORD=AyLVJWHp##LtSx4g%qYt
       - PGDATA=/var/lib/postgresql/data/pgdata
     networks:
       - exosuite-network
+
+  ## WEBSITE ##
 
   exosuite-website-php-fpm:
     working_dir: /var/www/exosuite-website
@@ -67,7 +72,7 @@ services:
     networks:
       - exosuite-network
     ports:
-      - ""
+      - "5432:5432"
 
 networks:
   exosuite-network:
