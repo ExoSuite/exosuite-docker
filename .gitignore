@@ -3,6 +3,4 @@ docker-compose.yml
 
 !/prod/users-api/docker-compose.yml
 
-!/prod/users-api/database/docker-compose.yml
-!/staging/users-api/docker-compose.yml
-!/staging/website/docker-compose.yml
+!/staging/docker-compose.yml
