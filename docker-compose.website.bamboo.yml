@@ -48,7 +48,7 @@ services:
         - ROOT_PATH=${STORAGE_PATH}/${API_FOLDER_NAME}
         - SERVER_NAME=api.exosuite.${BUILD_NUMBER}.local
         - DB_HOST=exosuite-users-api-postgres-${BUILD_NUMBER}
-    container_name: nginx-website-${BUILD_NUMBER}
+    container_name: nginx-users-api-${BUILD_NUMBER}
     depends_on:
       - exosuite-users-api-php-fpm
       - exosuite-users-api-postgres
