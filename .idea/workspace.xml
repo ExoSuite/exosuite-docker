@@ -86,8 +86,8 @@
           <entry key="env" value="104" />
           <entry key="gitignore" value="75" />
           <entry key="py" value="2" />
-          <entry key="txt" value="568" />
-          <entry key="yml" value="1142" />
+          <entry key="txt" value="583" />
+          <entry key="yml" value="1155" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -95,9 +95,9 @@
           <entry key=".env file" value="202" />
           <entry key="Dockerfile" value="819" />
           <entry key="Git file" value="75" />
-          <entry key="PLAIN_TEXT" value="570" />
+          <entry key="PLAIN_TEXT" value="585" />
           <entry key="SmartyConfig" value="224" />
-          <entry key="YAML" value="1142" />
+          <entry key="YAML" value="1155" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -133,8 +133,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/staging/docker-compose.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="648">
-              <caret line="39" column="19" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="19" />
+            <state relative-caret-position="680">
+              <caret line="82" column="32" selection-start-line="82" selection-start-column="32" selection-end-line="82" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -442,14 +442,7 @@
       <workItem from="1538577566353" duration="892000" />
       <workItem from="1538706467307" duration="218000" />
       <workItem from="1538756358427" duration="8000" />
-      <workItem from="1538756384392" duration="4485000" />
-    </task>
-    <task id="LOCAL-00001" summary="add conf and docker">
-      <created>1536188457150</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1536188457151</updated>
+      <workItem from="1538756384392" duration="4912000" />
     </task>
     <task id="LOCAL-00002" summary="add conf and docker">
       <created>1536190850916</created>
@@ -780,11 +773,25 @@
       <option name="project" value="LOCAL" />
       <updated>1538844903813</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="fix for staging">
+      <created>1538847519395</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1538847519395</updated>
+    </task>
+    <task id="LOCAL-00050" summary="fix for staging">
+      <created>1538847714440</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1538847714441</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88868000" />
+    <option name="totallyTimeSpent" value="89295000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -821,7 +828,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="code refactor" />
     <MESSAGE value="envs" />
     <MESSAGE value="add template" />
     <MESSAGE value="bamboo" />
@@ -846,7 +852,8 @@
     <MESSAGE value="try fix" />
     <MESSAGE value="multiple fixes for dockers" />
     <MESSAGE value="fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix" />
+    <MESSAGE value="fix for staging" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix for staging" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/server_confs/exosuite.api.prod.conf" />
@@ -1053,8 +1060,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/staging/docker-compose.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="39" column="19" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="19" />
+        <state relative-caret-position="680">
+          <caret line="82" column="32" selection-start-line="82" selection-start-column="32" selection-end-line="82" selection-end-column="32" />
         </state>
       </provider>
     </entry>
