@@ -2,8 +2,6 @@ version: '3'
 
 services:
 
-  ## Users api ##
-
   exosuite-users-api-php-fpm:
     working_dir: /var/www/exosuite-users-api
     image: exosuite.fr:5000/exosuite/exosuite-users-api-php-fpm
@@ -23,7 +21,7 @@ services:
       - exosuite-users-api-php-fpm
     networks:
       - exosuite-network
-      
+
   exosuite-users-api-postgres:
     restart: always
     image: postgres:11-alpine
@@ -37,8 +35,6 @@ services:
       - /var/lib/postgresql/exosuite-users-api-postgres:/var/lib/postgresql/data/pgdata
     networks:
       - exosuite-network
-
-  ## Website ##
 
   exosuite-website-php-fpm:
     working_dir: /var/www/exosuite-website
