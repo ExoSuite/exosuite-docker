@@ -1,0 +1,79 @@
+version: '3'
+
+services:
+
+  ## Users api ##
+
+  exosuite-users-api-php-fpm:
+    working_dir: /var/www/exosuite-users-api
+    image: exosuite.fr:5000/exosuite/exosuite-users-api-php-fpm
+    restart: unless-stopped
+    container_name: exosuite-users-api-php-fpm
+    volumes:
+      - /var/www/exosuite-users-api/storage:/var/www/exosuite-users-api/storage
+    networks:
+      - exosuite-network
+
+  nginx-users-api:
+    hostname: api.exosuite.local
+    restart: unless-stopped
+    image: exosuite.fr:5000/exosuite/exosuite-users-api-nginx
+    container_name: nginx-users-api
+    depends_on:
+      - exosuite-users-api-php-fpm
+    networks:
+      - exosuite-network
+      
+  exosuite-users-api-postgres:
+    restart: always
+    image: postgres:11-alpine
+    container_name: exosuite-users-api-postgres
+    environment:
+      - POSTGRES_DB=exosuite-users-api
+      - POSTGRES_USER=exosuite
+      - POSTGRES_PASSWORD=MAy5UBgd2YVgv8WTzSACQrGSddURGdzfpa9
+      - PGDATA=/var/lib/postgresql/data/pgdata
+    volumes:
+      - /var/lib/postgresql/exosuite-users-api-postgres:/var/lib/postgresql/data/pgdata
+    networks:
+      - exosuite-network
+
+  ## Website ##
+
+  exosuite-website-php-fpm:
+    working_dir: /var/www/exosuite-website
+    image: exosuite.fr:5000/exosuite/exosuite-website-php-fpm
+    restart: unless-stopped
+    container_name: exosuite-website-php-fpm
+    volumes:
+      - /var/www/exosuite-website/storage:/var/www/exosuite-website/storage
+    networks:
+      - exosuite-network
+
+  nginx-website:
+    hostname: exosuite.local
+    restart: unless-stopped
+    image: exosuite.fr:5000/exosuite/exosuite-website-nginx
+    container_name: nginx-website
+    depends_on:
+      - exosuite-website-php-fpm
+    networks:
+      - exosuite-network
+
+  exosuite-website-postgres:
+    restart: always
+    image: postgres:11-alpine
+    container_name: exosuite-website-postgres
+    environment:
+      - POSTGRES_DB=exosuite-website
+      - POSTGRES_USER=exosuite
+      - POSTGRES_PASSWORD=4tpaBrVqCqDXct7862VmFAmfrAvjpYuNReqJx7Snqy
+      - PGDATA=/var/lib/postgresql/data/pgdata
+    volumes:
+      - /var/lib/postgresql/exosuite-website:/var/lib/postgresql/data/pgdata
+    networks:
+      - exosuite-network
+
+networks:
+  exosuite-network:
+    driver: bridge
