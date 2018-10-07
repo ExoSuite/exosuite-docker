@@ -9,6 +9,8 @@ services:
     container_name: exosuite-api-php-fpm-${BUILD_NUMBER}
     volumes:
       - ${API_FOLDER_PATH}:${STORAGE_PATH}/${API_FOLDER_NAME}
+    networks:
+      - exosuite-network
 
   nginx:
     hostname: api.exosuite.${BUILD_NUMBER}.local
@@ -27,6 +29,8 @@ services:
       - exosuite-users-api-postgres
     volumes:
       - ${API_FOLDER_PATH}:${STORAGE_PATH}/${API_FOLDER_NAME}
+    networks:
+      - exosuite-network
 
   exosuite-users-api-postgres:
     restart: ${RESTART_MODE}
@@ -37,3 +41,9 @@ services:
       - POSTGRES_USER=exosuite
       - POSTGRES_PASSWORD=root
       - PGDATA=/var/lib/postgresql/data/pgdata
+    networks:
+      - exosuite-network
+
+networks:
+  exosuite-network:
+    driver: bridge
