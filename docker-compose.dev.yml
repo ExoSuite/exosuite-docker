@@ -12,7 +12,6 @@ services:
     networks:
       - exosuite-network
 
-
   exosuite-website-php-fpm:
     working_dir: ${STORAGE_PATH}/${WEBSITE_FOLDER_NAME}
     build:
@@ -40,6 +39,7 @@ services:
       - exosuite-website-php-fpm
       - exosuite-api-postgres
       - exosuite-website-postgres
+      - exosuite-laravel-echo-server
     networks:
       - exosuite-network
 
@@ -82,6 +82,60 @@ services:
     volumes:
       - ${STORAGE_PATH}/exosuite-website-postgres:/var/lib/postgresql/data/pgdata
 
+  exosuite-laravel-echo-server:
+    restart: ${RESTART_MODE}
+    build:
+      context: ./laravel-echo-server
+    container_name: exosuite-laravel-echo-server
+    environment:
+      - APP_URL=http://api.exosuite.local
+      - APP_DEBUG=true
+      - REDIS_HOST=${REDIS_HOST}
+      - LES_DB=redis
+    networks:
+      - exosuite-network
+    depends_on:
+      - exosuite-redis
+
+  exosuite-redis:
+    restart: ${RESTART_MODE}
+    container_name: exosuite-redis
+    image: redis:alpine
+    volumes:
+      - ${STORAGE_PATH}/exosuite-redis:/data
+    networks:
+      - exosuite-network
+    command: ["sh", "-c",'docker-entrypoint.sh --appendonly yes']
+
+  exosuite-laravel-horizon:
+    restart: ${RESTART_MODE}
+    container_name: exosuite-laravel-artisan
+    build:
+      context: laravel-artisan
+    volumes:
+      - ${API_FOLDER_PATH}:${STORAGE_PATH}/${API_FOLDER_NAME}
+    environment:
+      - COMMAND=horizon
+      - WORKDIR=${STORAGE_PATH}/${API_FOLDER_NAME}
+    networks:
+      - exosuite-network
+    depends_on:
+      - exosuite-laravel-echo-server
+
+  exosuite-scheduler:
+    restart: ${RESTART_MODE}
+    container_name: exosuite-scheduler
+    build:
+      context: laravel-artisan
+    volumes:
+      - ${API_FOLDER_PATH}:${STORAGE_PATH}/${API_FOLDER_NAME}
+    environment:
+      - COMMAND=schedule:run
+      - WORKDIR=${STORAGE_PATH}/${API_FOLDER_NAME}
+    networks:
+      - exosuite-network
+    depends_on:
+      - exosuite-laravel-echo-server
 
 networks:
   exosuite-network:
