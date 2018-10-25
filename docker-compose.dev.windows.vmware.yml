@@ -98,7 +98,7 @@ services:
     networks:
       - exosuite-network
     depends_on:
-      - exosuite-redis
+      - exosuite-redis-live
 
   exosuite-redis-store:
     restart: ${RESTART_MODE}
