@@ -3,6 +3,7 @@ FROM php:7.2-alpine
 ARG COMMAND
 ARG WORKDIR
 ENV COMMAND $COMMAND
+ENV WORKDIR $WORKDIR
 
 RUN set -ex \
   && apk --no-cache add \

@@ -122,7 +122,7 @@ services:
 
   exosuite-laravel-horizon:
     restart: ${RESTART_MODE}
-    container_name: exosuite-laravel-artisan
+    container_name: exosuite-laravel-horizon
     build:
       context: laravel-artisan
     volumes:
