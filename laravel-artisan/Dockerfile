@@ -17,4 +17,4 @@ RUN chmod 755 /usr/bin/docker-php-entrypoint.sh
 
 ENTRYPOINT ["/usr/bin/docker-php-entrypoint.sh"]
 
-CMD ["sh", "-c", "$WORKDIR/artisan $COMMAND"]
+CMD ["sh", "-c", "php $WORKDIR/artisan $COMMAND"]
