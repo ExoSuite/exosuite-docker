@@ -143,7 +143,7 @@ services:
     volumes:
       - ${API_FOLDER_PATH}:${STORAGE_PATH}/${API_FOLDER_NAME}
     environment:
-      - COMMAND=schedule:run
+      - COMMAND=schedule:daemon
       - WORKDIR=${STORAGE_PATH}/${API_FOLDER_NAME}
     networks:
       - exosuite-network
