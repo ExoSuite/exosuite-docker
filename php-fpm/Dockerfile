@@ -3,7 +3,7 @@ FROM php:7.2-fpm
 ENV DEBIAN_FRONTEND noninteractive
 ENV COMPOSER_ALLOW_SUPERUSER=1
 
-RUN apt-get update && apt-get install -y libpq-dev curl zip unzip git && docker-php-ext-install -j$(nproc) pdo_pgsql
+RUN apt-get update && apt-get install -y libpq-dev curl zip unzip git && docker-php-ext-install -j$(nproc) pdo_pgsql pcntl bcmath
 
 RUN curl -o /tmp/composer-setup.php https://getcomposer.org/installer \
 && curl -o /tmp/composer-setup.sig https://composer.github.io/installer.sig \
