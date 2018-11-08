@@ -11,7 +11,7 @@ RUN set -ex \
 
 COPY ./docker-php-entrypoint.sh /usr/bin/docker-php-entrypoint.sh
 
-RUN docker-php-ext-install -j$(nproc) pdo_pgsql pcntl posix
+RUN docker-php-ext-install -j$(nproc) pdo_pgsql pcntl posix bcmath
 
 RUN chmod 755 /usr/bin/docker-php-entrypoint.sh
 
