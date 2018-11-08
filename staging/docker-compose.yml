@@ -27,7 +27,8 @@ services:
 
   exosuite-users-api-postgres:
     restart: always
-    image: postgres:11-alpine
+    build:
+      context: ../postgres-postgis
     container_name: exosuite-users-api-postgres
     environment:
       - POSTGRES_DB=exosuite-users-api
@@ -36,8 +37,6 @@ services:
       - PGDATA=/var/lib/postgresql/data/pgdata
     networks:
       - exosuite-network
-    ports:
-      - "5442:5432"
 
   ## WEBSITE ##
 
