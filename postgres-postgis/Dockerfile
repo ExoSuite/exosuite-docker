@@ -62,3 +62,5 @@ RUN set -ex \
 
 COPY ./initdb-postgis.sh /docker-entrypoint-initdb.d/postgis.sh
 COPY ./update-postgis.sh /usr/local/bin
+
+RUN chmod 755 /usr/local/bin/update-postgis.sh
