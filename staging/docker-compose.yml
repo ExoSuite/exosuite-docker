@@ -35,6 +35,8 @@ services:
       - POSTGRES_USER=exosuite
       - POSTGRES_PASSWORD=AyLVJWHp##LtSx4g%qYt
       - PGDATA=/var/lib/postgresql/data/pgdata
+    ports:
+      - "5442:5442"
     networks:
       - exosuite-network
 
