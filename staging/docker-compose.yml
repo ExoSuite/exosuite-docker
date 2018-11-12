@@ -41,21 +41,6 @@ services:
     networks:
       - exosuite-network
 
-  exosuite-laravel-echo-server:
-    restart: unless-stopped
-    build:
-      - context: ../laravel-echo-server
-    container_name: exosuite-laravel-echo-server
-    environment:
-      - APP_URL=https://api.dev.exosuite.fr
-      - APP_DEBUG=true
-      - REDIS_HOST=exosuite-redis-live
-      - LES_DB=redis
-    networks:
-      - exosuite-network
-    depends_on:
-      - exosuite-redis-live
-
   exosuite-laravel-horizon:
     restart: unless-stopped
     container_name: exosuite-laravel-horizon
@@ -131,6 +116,21 @@ services:
     networks:
       - exosuite-network
     command: ["sh", "-c",'docker-entrypoint.sh --appendonly yes']
+
+  exosuite-laravel-echo-server:
+    restart: unless-stopped
+    build:
+      - context: ../laravel-echo-server
+    container_name: exosuite-laravel-echo-server
+    environment:
+      - APP_URL=https://api.dev.exosuite.fr
+      - APP_DEBUG=true
+      - REDIS_HOST=exosuite-redis-live
+      - LES_DB=redis
+    networks:
+      - exosuite-network
+    depends_on:
+      - exosuite-redis-live
 
 networks:
   exosuite-network:
