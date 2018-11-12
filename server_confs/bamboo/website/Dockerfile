@@ -20,3 +20,5 @@ ADD snippets /etc/nginx/snippets
 RUN envsubst \$FPM_SERVER,\$SERVER_NAME,\$ROOT_PATH < /etc/nginx/conf.d/default.template > /etc/nginx/conf.d/default.conf
 
 RUN rm /etc/nginx/conf.d/default.template
+
+COPY ./nginx.conf /etc/nginx
