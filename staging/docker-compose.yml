@@ -2,7 +2,7 @@ version: '3'
 
 services:
 
-  ## API ##
+  ### API ###
 
   exosuite-users-api-php-fpm:
     working_dir: /var/www/exosuite-users-api
@@ -22,11 +22,12 @@ services:
     depends_on:
       - exosuite-users-api-php-fpm
       - exosuite-users-api-postgres
+      - exosuite-laravel-echo-server
     networks:
       - exosuite-network
 
   exosuite-users-api-postgres:
-    restart: always
+    restart: unless-stopped
     build:
       context: ../postgres-postgis
     container_name: exosuite-users-api-postgres
@@ -40,7 +41,41 @@ services:
     networks:
       - exosuite-network
 
-  ## WEBSITE ##
+  exosuite-laravel-echo-server:
+    restart: unless-stopped
+    build:
+      - context: ../laravel-echo-server
+    container_name: exosuite-laravel-echo-server
+    environment:
+      - APP_URL=https://api.dev.exosuite.fr
+      - APP_DEBUG=true
+      - REDIS_HOST=exosuite-redis-live
+      - LES_DB=redis
+    networks:
+      - exosuite-network
+    depends_on:
+      - exosuite-redis-live
+
+  exosuite-laravel-horizon:
+    restart: unless-stopped
+    container_name: exosuite-laravel-horizon
+    image: dev.exosuite.fr:5000/exosuite/exosuite-laravel-horizon
+    networks:
+      - exosuite-network
+    depends_on:
+      - exosuite-laravel-echo-server
+
+  exosuite-scheduler:
+    restart: unless-stopped
+    container_name: exosuite-scheduler
+    image: dev.exosuite.fr:5000/exosuite/exosuite-scheduler
+    networks:
+      - exosuite-network
+    depends_on:
+      - exosuite-laravel-echo-server
+
+
+  ### WEBSITE ###
 
   exosuite-website-php-fpm:
     working_dir: /var/www/exosuite-website
@@ -64,7 +99,7 @@ services:
       - exosuite-network
 
   exosuite-website-postgres:
-    restart: always
+    restart: unless-stopped
     image: postgres:11-alpine
     container_name: exosuite-website-postgres
     environment:
@@ -74,6 +109,28 @@ services:
       - PGDATA=/var/lib/postgresql/data/pgdata
     networks:
       - exosuite-network
+
+  ### OTHERS ###
+
+  exosuite-redis-store:
+    restart: unless-stopped
+    container_name: exosuite-redis-store
+    image: redis:alpine
+    volumes:
+      - /var/www/exosuite-redis-store:/data
+    networks:
+      - exosuite-network
+    command: ["sh", "-c",'docker-entrypoint.sh --appendonly yes']
+
+  exosuite-redis-live:
+    restart: unless-stopped
+    container_name: exosuite-redis-live
+    image: redis:alpine
+    volumes:
+      - /var/www/exosuite-redis-live:/data
+    networks:
+      - exosuite-network
+    command: ["sh", "-c",'docker-entrypoint.sh --appendonly yes']
 
 networks:
   exosuite-network:
