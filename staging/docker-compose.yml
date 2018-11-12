@@ -120,7 +120,7 @@ services:
   exosuite-laravel-echo-server:
     restart: unless-stopped
     build:
-      - context: ../laravel-echo-server
+      context: ../laravel-echo-server
     container_name: exosuite-laravel-echo-server
     environment:
       - APP_URL=https://api.dev.exosuite.fr

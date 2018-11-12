@@ -103,8 +103,8 @@
           <entry key="py" value="2" />
           <entry key="sh" value="4" />
           <entry key="tmpl" value="53" />
-          <entry key="txt" value="797" />
-          <entry key="yml" value="2168" />
+          <entry key="txt" value="806" />
+          <entry key="yml" value="2186" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -113,9 +113,9 @@
           <entry key="Bash" value="4" />
           <entry key="Dockerfile" value="1411" />
           <entry key="Git file" value="82" />
-          <entry key="PLAIN_TEXT" value="852" />
+          <entry key="PLAIN_TEXT" value="861" />
           <entry key="SmartyConfig" value="276" />
-          <entry key="YAML" value="2168" />
+          <entry key="YAML" value="2186" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -199,8 +199,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/staging/docker-compose.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1557">
-              <caret line="77" column="17" selection-start-line="77" selection-start-column="17" selection-end-line="77" selection-end-column="17" />
+            <state relative-caret-position="227">
+              <caret line="122" column="6" selection-start-line="122" selection-start-column="6" selection-end-line="122" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -475,21 +475,7 @@
       <workItem from="1541718228790" duration="275000" />
       <workItem from="1541895833485" duration="1208000" />
       <workItem from="1541965918616" duration="1938000" />
-      <workItem from="1541979890303" duration="2703000" />
-    </task>
-    <task id="LOCAL-00024" summary="add prod">
-      <created>1538005426499</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1538005426499</updated>
-    </task>
-    <task id="LOCAL-00025" summary="add prod">
-      <created>1538013391732</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1538013391733</updated>
+      <workItem from="1541979890303" duration="2956000" />
     </task>
     <task id="LOCAL-00026" summary="add prod volume">
       <created>1538017302607</created>
@@ -820,11 +806,25 @@
       <option name="project" value="LOCAL" />
       <updated>1541980375532</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="staging">
+      <created>1541983525789</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1541983525789</updated>
+    </task>
+    <task id="LOCAL-00074" summary="staging">
+      <created>1541983741169</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1541983741169</updated>
+    </task>
+    <option name="localTasksCounter" value="75" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="131211000" />
+    <option name="totallyTimeSpent" value="131464000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -884,9 +884,9 @@
     <MESSAGE value="add postgis" />
     <MESSAGE value="update" />
     <MESSAGE value="fix postgis" />
-    <MESSAGE value="staging" />
     <MESSAGE value="prod update" />
-    <option name="LAST_COMMIT_MESSAGE" value="prod update" />
+    <MESSAGE value="staging" />
+    <option name="LAST_COMMIT_MESSAGE" value="staging" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/server_confs/prod/website/exosuite.prod.conf" />
@@ -1131,8 +1131,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/staging/docker-compose.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1557">
-          <caret line="77" column="17" selection-start-line="77" selection-start-column="17" selection-end-line="77" selection-end-column="17" />
+        <state relative-caret-position="227">
+          <caret line="122" column="6" selection-start-line="122" selection-start-column="6" selection-end-line="122" selection-end-column="6" />
         </state>
       </provider>
     </entry>
