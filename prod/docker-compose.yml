@@ -25,7 +25,7 @@ services:
   exosuite-users-api-postgres:
     restart: always
     build:
-      - context: ../postgres-postgis
+      context: ../postgres-postgis
     container_name: exosuite-users-api-postgres
     environment:
       - POSTGRES_DB=exosuite-users-api
