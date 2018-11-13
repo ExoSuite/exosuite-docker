@@ -13,3 +13,5 @@ RUN curl -o /tmp/composer-setup.php https://getcomposer.org/installer \
 && rm -f /tmp/composer-setup.*
 
 COPY ./www.conf /usr/local/etc/php-fpm.d
+
+CMD ["php-fpm -R"]
