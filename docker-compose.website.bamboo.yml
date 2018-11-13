@@ -10,7 +10,7 @@ services:
     volumes:
       - ${WEBSITE_FOLDER_PATH}:${STORAGE_PATH}/${WEBSITE_FOLDER_NAME}
     networks:
-      - exosuite-network
+      - selenium-hub_exosuite-tests
 
   nginx-website:
     hostname: exosuite.${BUILD_NUMBER}.local
@@ -30,7 +30,7 @@ services:
     volumes:
       - ${WEBSITE_FOLDER_PATH}:${STORAGE_PATH}/${WEBSITE_FOLDER_NAME}
     networks:
-      - exosuite-network
+      - selenium-hub_exosuite-tests
 
   exosuite-website-postgres:
     restart: ${RESTART_MODE}
@@ -42,8 +42,8 @@ services:
       - POSTGRES_PASSWORD=root
       - PGDATA=/var/lib/postgresql/data/pgdata
     networks:
-      - exosuite-network
+      - selenium-hub_exosuite-tests
 
 networks:
-  exosuite-network:
-    driver: bridge
+  selenium-hub_exosuite-tests:
+    external: true

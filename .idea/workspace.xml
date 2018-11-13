@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3210a84e-5e86-4379-ac7d-7a9044aa39da" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.website.bamboo.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.website.bamboo.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-fpm/bamboo/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-fpm/bamboo/www.conf" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -81,8 +80,8 @@
     <session id="-2031719798">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="40" />
-          <entry key="project.open.time.0" value="10" />
+          <entry key="project.closed" value="41" />
+          <entry key="project.open.time.0" value="11" />
           <entry key="project.open.time.1" value="12" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.2" value="1" />
@@ -90,7 +89,7 @@
           <entry key="project.open.time.5" value="8" />
           <entry key="project.open.time.6" value="2" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="42" />
+          <entry key="project.opened" value="43" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -105,8 +104,8 @@
           <entry key="py" value="2" />
           <entry key="sh" value="4" />
           <entry key="tmpl" value="53" />
-          <entry key="txt" value="866" />
-          <entry key="yml" value="2189" />
+          <entry key="txt" value="873" />
+          <entry key="yml" value="2193" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -115,9 +114,9 @@
           <entry key="Bash" value="4" />
           <entry key="Dockerfile" value="1453" />
           <entry key="Git file" value="82" />
-          <entry key="PLAIN_TEXT" value="921" />
+          <entry key="PLAIN_TEXT" value="928" />
           <entry key="SmartyConfig" value="289" />
-          <entry key="YAML" value="2189" />
+          <entry key="YAML" value="2193" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -210,8 +209,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/docker-compose.website.bamboo.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+            <state relative-caret-position="298">
+              <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
             </state>
           </provider>
         </entry>
@@ -268,7 +267,6 @@
       <find>\.php\$</find>
       <find>\.php$</find>
       <find>STORAGE_PATH</find>
-      <find>exosuite-network</find>
       <find>DB_HOST</find>
       <find>API_</find>
       <find>exosuite-api-php-fpm</find>
@@ -284,6 +282,7 @@
       <find>laravel-artisan</find>
       <find>schedule:run</find>
       <find>always</find>
+      <find>exosuite-network</find>
     </findStrings>
     <replaceStrings>
       <replace>- ${API_FOLDER_PATH}:${STORAGE_PATH}/${API_FOLDER_NAME}</replace>
@@ -301,6 +300,7 @@
       <replace>schedule:run</replace>
       <replace>schedule:daemon</replace>
       <replace>unless-stopped</replace>
+      <replace>selenium-hub_exosuite-tests</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -370,9 +370,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="819" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -521,14 +520,8 @@
       <workItem from="1542052593392" duration="1379000" />
       <workItem from="1542060770386" duration="931000" />
       <workItem from="1542067601281" duration="314000" />
-      <workItem from="1542072708258" duration="377000" />
-    </task>
-    <task id="LOCAL-00032" summary="remove port for pgsql">
-      <created>1538071555121</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1538071555121</updated>
+      <workItem from="1542072708258" duration="713000" />
+      <workItem from="1542125082855" duration="115000" />
     </task>
     <task id="LOCAL-00033" summary="pre add website build">
       <created>1538510405703</created>
@@ -866,17 +859,24 @@
       <option name="project" value="LOCAL" />
       <updated>1542072769247</updated>
     </task>
-    <option name="localTasksCounter" value="81" />
+    <task id="LOCAL-00081" summary="try fix bamboo">
+      <created>1542073312244</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1542073312244</updated>
+    </task>
+    <option name="localTasksCounter" value="82" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="137759000" />
+    <option name="totallyTimeSpent" value="138210000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3390558" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.34406295" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -889,7 +889,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" weight="0.55651104" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32923833" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.33415234" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.2997543" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -907,7 +907,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="fix for website build" />
     <MESSAGE value="remove resolver" />
     <MESSAGE value="potential fix for docker-compose of website" />
     <MESSAGE value="will only build exosuite-website instead of exosuite-website and exosuite-users-api" />
@@ -932,7 +931,8 @@
     <MESSAGE value="revert api.exosuite.conf" />
     <MESSAGE value="docker-compose prod" />
     <MESSAGE value="try fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="try fix" />
+    <MESSAGE value="try fix bamboo" />
+    <option name="LAST_COMMIT_MESSAGE" value="try fix bamboo" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/server_confs/prod/api/Dockerfile" />
@@ -1130,6 +1130,8 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/php-fpm/bamboo/www.conf" />
+    <entry file="file://$PROJECT_DIR$/php-fpm/bamboo/Dockerfile" />
     <entry file="file://$PROJECT_DIR$/prod/docker-compose.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1311">
@@ -1151,10 +1153,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php-fpm/bamboo/www.conf">
+    <entry file="file://$PROJECT_DIR$/php-fpm/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="23" column="12" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
+        <state>
+          <caret column="12" selection-start-column="12" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -1179,24 +1181,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php-fpm/bamboo/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="14" column="40" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-fpm/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="12" selection-start-column="12" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/docker-compose.website.bamboo.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+        <state relative-caret-position="298">
+          <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
         </state>
       </provider>
     </entry>
