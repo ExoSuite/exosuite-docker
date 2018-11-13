@@ -4,7 +4,7 @@ services:
   exosuite-website-php-fpm:
     working_dir: ${STORAGE_PATH}/${WEBSITE_FOLDER_NAME}
     build:
-      context: ./php-fpm/bamboo
+      context: ./php-fpm
     restart: ${RESTART_MODE}
     container_name: exosuite-website-php-fpm-${BUILD_NUMBER}
     volumes:
