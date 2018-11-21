@@ -23,25 +23,53 @@ services:
     networks:
       - exosuite-network
 
-  nginx:
-    hostname: exosuite.local api.exosuite.local
+  nginx-website:
+    hostname: exosuite.local
     restart: ${RESTART_MODE}
     build:
       context: ./server_confs/${ENVIRONMENT}
-    ports:
-      - ${NGINX_PORT}
+      args:
+      - ENVIRONMENT=${ENVIRONMENT}
     volumes:
-      - ${API_FOLDER_PATH}:${STORAGE_PATH}/${API_FOLDER_NAME}
-      - ${WEBSITE_FOLDER_PATH}:${STORAGE_PATH}/${WEBSITE_FOLDER_NAME}
-    container_name: nginx
+    - ${WEBSITE_FOLDER_PATH}:${STORAGE_PATH}/${WEBSITE_FOLDER_NAME}
+    container_name: nginx-website
     depends_on:
-      - exosuite-api-php-fpm
-      - exosuite-website-php-fpm
-      - exosuite-api-postgres
-      - exosuite-website-postgres
-      - exosuite-laravel-echo-server
+    - exosuite-website-php-fpm
+    - exosuite-website-postgres
     networks:
-      - exosuite-network
+    - exosuite-network
+
+  exosuite-nginx:
+    hostname: exosuite.local api.exosuite.local
+    restart: ${RESTART_MODE}
+    ports:
+    - ${NGINX_PORT}
+    build:
+      context: ./server_confs/${ENVIRONMENT}/reverse
+      args:
+      - ENVIRONMENT=${ENVIRONMENT}
+    container_name: exosuite-nginx
+    depends_on:
+    - nginx-users-api
+    - nginx-website
+    networks:
+    - exosuite-network
+
+  nginx-users-api:
+    hostname: api.exosuite.local
+    restart: ${RESTART_MODE}
+    build:
+      context: ./server_confs/${ENVIRONMENT}
+      args:
+      - ENVIRONMENT=${ENVIRONMENT}
+    volumes:
+    - ${API_FOLDER_PATH}:${STORAGE_PATH}/${API_FOLDER_NAME}
+    container_name: nginx-users-api
+    depends_on:
+    - exosuite-api-php-fpm
+    - exosuite-api-postgres
+    networks:
+    - exosuite-network
 
   resolver:
     image: dvdarias/docker-hoster:latest
@@ -89,14 +117,16 @@ services:
       context: ./laravel-echo-server
     container_name: exosuite-laravel-echo-server
     environment:
-      - APP_URL=http://api.exosuite.local
-      - APP_DEBUG=true
-      - REDIS_HOST=${REDIS_HOST}
-      - LES_DB=redis
+    - APP_URL=http://nginx-users-api
+    - APP_DEBUG=true
+    - REDIS_HOST=${REDIS_HOST}
+    - LES_DB=redis
     networks:
-      - exosuite-network
+    - exosuite-network
+    ports:
+    - "6001:6001"
     depends_on:
-      - exosuite-redis-live
+    - exosuite-redis-live
 
   exosuite-redis-store:
     restart: ${RESTART_MODE}
@@ -107,6 +137,8 @@ services:
     networks:
       - exosuite-network
     command: ["sh", "-c",'docker-entrypoint.sh --appendonly yes']
+    ports:
+      - "6379:6379"
 
   exosuite-redis-live:
     restart: ${RESTART_MODE}
