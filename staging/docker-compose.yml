@@ -133,6 +133,7 @@ services:
       - exosuite-redis-live
 
   exosuite-elasticsearch:
+    restart: unless-stopped
     image: docker.elastic.co/elasticsearch/elasticsearch:6.5.1
     container_name: exosuite-elasticsearch-main
     environment:
@@ -151,6 +152,7 @@ services:
       - 9200:9200
 
   exosuite-elasticsearch-node:
+    restart: unless-stopped
     image: docker.elastic.co/elasticsearch/elasticsearch:6.5.1
     container_name: exosuite-elasticsearch-node
     environment:
