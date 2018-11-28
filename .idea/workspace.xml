@@ -48,8 +48,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/staging/docker-compose.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="154" column="27" selection-start-line="154" selection-start-column="27" selection-end-line="154" selection-end-column="27" />
+            <state relative-caret-position="196">
+              <caret line="161" column="69" selection-start-line="161" selection-start-column="69" selection-end-line="161" selection-end-column="69" />
             </state>
           </provider>
         </entry>
@@ -123,6 +123,7 @@
       <find>exosuite-network</find>
       <find>nginx-users-api</find>
       <find>11</find>
+      <find>postgres:11-alpine</find>
     </findStrings>
     <replaceStrings>
       <replace>- ${API_FOLDER_PATH}:${STORAGE_PATH}/${API_FOLDER_NAME}</replace>
@@ -141,6 +142,7 @@
       <replace>schedule:daemon</replace>
       <replace>unless-stopped</replace>
       <replace>selenium-hub_exosuite-tests</replace>
+      <replace>postgres:11.1-alpine</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -306,6 +308,26 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="staging.exosuite-elasticsearch-node: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker Exosuite">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="exosuite-elasticsearch-node" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="staging/docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.staging.exosuite-elasticsearch-node: Compose Deployment" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -374,21 +396,7 @@
       <workItem from="1543339401727" duration="1140000" />
       <workItem from="1543369337515" duration="1837000" />
       <workItem from="1543373894685" duration="2000" />
-      <workItem from="1543433086755" duration="2416000" />
-    </task>
-    <task id="LOCAL-00040" summary="fix">
-      <created>1538532256571</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1538532256571</updated>
-    </task>
-    <task id="LOCAL-00041" summary="refactor code">
-      <created>1538532890697</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1538532890697</updated>
+      <workItem from="1543433086755" duration="2898000" />
     </task>
     <task id="LOCAL-00042" summary="add website staging">
       <created>1538757299695</created>
@@ -719,11 +727,25 @@
       <option name="project" value="LOCAL" />
       <updated>1543439508122</updated>
     </task>
-    <option name="localTasksCounter" value="89" />
+    <task id="LOCAL-00089" summary="add exosuite-elasticsearch">
+      <created>1543440173414</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1543440173414</updated>
+    </task>
+    <task id="LOCAL-00090" summary="add exosuite-elasticsearch">
+      <created>1543440774606</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1543440774606</updated>
+    </task>
+    <option name="localTasksCounter" value="91" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="153681000" />
+    <option name="totallyTimeSpent" value="154163000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -739,10 +761,10 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" weight="0.55651104" />
+      <window_info anchor="bottom" id="Docker" order="7" weight="0.55651104" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32923833" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49946752" visible="true" weight="0.28501227" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49946752" weight="0.28501227" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5005325" side_tool="true" weight="0.32711306" />
       <window_info anchor="bottom" id="Messages" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -1002,13 +1024,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/postgres-postgis/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="18" selection-start-column="18" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/php-fpm/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1051,10 +1066,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/postgres-postgis/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="18" selection-start-column="18" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/staging/docker-compose.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="154" column="27" selection-start-line="154" selection-start-column="27" selection-end-line="154" selection-end-column="27" />
+        <state relative-caret-position="196">
+          <caret line="161" column="69" selection-start-line="161" selection-start-column="69" selection-end-line="161" selection-end-column="69" />
         </state>
       </provider>
     </entry>
