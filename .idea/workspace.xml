@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="3210a84e-5e86-4379-ac7d-7a9044aa39da" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staging/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/staging/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.api.bamboo.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.api.bamboo.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.dev.windows.vmware.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.dev.windows.vmware.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.dev.yml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,26 +32,44 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/docker-compose.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="303">
+            <state relative-caret-position="495">
               <caret line="193" column="24" lean-forward="true" selection-start-line="184" selection-start-column="1" selection-end-line="193" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/docker-compose.api.bamboo.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="45" column="24" selection-start-line="45" selection-start-column="24" selection-end-line="45" selection-end-column="24" />
+            <state relative-caret-position="530">
+              <caret line="52" column="36" selection-start-line="52" selection-start-column="36" selection-end-line="52" selection-end-column="36" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docker-compose.dev.windows.vmware.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4439">
+              <caret line="193" column="24" selection-start-line="193" selection-start-column="24" selection-end-line="193" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docker-compose.dev.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="518">
+              <caret line="191" column="24" lean-forward="true" selection-start-line="182" selection-start-column="2" selection-end-line="191" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/staging/docker-compose.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="161" column="69" selection-start-line="161" selection-start-column="69" selection-end-line="161" selection-end-column="69" />
+            <state relative-caret-position="2642">
+              <caret line="162" column="45" selection-start-line="162" selection-start-column="45" selection-end-line="162" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -193,15 +213,15 @@
         <option value="$PROJECT_DIR$/server_confs/dev/reverse/api.exosuite.conf" />
         <option value="$PROJECT_DIR$/server_confs/dev/reverse/exosuite.conf" />
         <option value="$PROJECT_DIR$/server_confs/dev/api.exosuite.conf" />
-        <option value="$PROJECT_DIR$/docker-compose.dev.yml" />
         <option value="$PROJECT_DIR$/postgres-postgis/#Dockerfile#" />
-        <option value="$PROJECT_DIR$/docker-compose.dev.windows.vmware.yml" />
         <option value="$PROJECT_DIR$/postgres-postgis/Dockerfile" />
         <option value="$PROJECT_DIR$/laravel-artisan/Dockerfile" />
         <option value="$PROJECT_DIR$/php-fpm/Dockerfile" />
         <option value="$PROJECT_DIR$/docker-compose.yml" />
-        <option value="$PROJECT_DIR$/docker-compose.api.bamboo.yml" />
         <option value="$PROJECT_DIR$/staging/docker-compose.yml" />
+        <option value="$PROJECT_DIR$/docker-compose.dev.windows.vmware.yml" />
+        <option value="$PROJECT_DIR$/docker-compose.dev.yml" />
+        <option value="$PROJECT_DIR$/docker-compose.api.bamboo.yml" />
       </list>
     </option>
   </component>
@@ -396,21 +416,7 @@
       <workItem from="1543339401727" duration="1140000" />
       <workItem from="1543369337515" duration="1837000" />
       <workItem from="1543373894685" duration="2000" />
-      <workItem from="1543433086755" duration="2898000" />
-    </task>
-    <task id="LOCAL-00042" summary="add website staging">
-      <created>1538757299695</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1538757299696</updated>
-    </task>
-    <task id="LOCAL-00043" summary="refactor">
-      <created>1538835716554</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1538835716554</updated>
+      <workItem from="1543433086755" duration="3816000" />
     </task>
     <task id="LOCAL-00044" summary="refactor">
       <created>1538836750139</created>
@@ -741,11 +747,25 @@
       <option name="project" value="LOCAL" />
       <updated>1543440774606</updated>
     </task>
-    <option name="localTasksCounter" value="91" />
+    <task id="LOCAL-00091" summary="add exosuite-elasticsearch">
+      <created>1543440986576</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1543440986576</updated>
+    </task>
+    <task id="LOCAL-00092" summary="add exosuite-elasticsearch">
+      <created>1543441900795</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1543441900795</updated>
+    </task>
+    <option name="localTasksCounter" value="93" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="154163000" />
+    <option name="totallyTimeSpent" value="155081000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -982,13 +1002,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docker-compose.dev.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="702">
-          <caret line="158" column="61" selection-start-line="158" selection-start-column="61" selection-end-line="158" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/laravel-echo-server/laravel-echo-server.tmpl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
@@ -1038,27 +1051,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="193" column="24" lean-forward="true" selection-start-line="184" selection-start-column="1" selection-end-line="193" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docker-compose.api.bamboo.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="45" column="24" selection-start-line="45" selection-start-column="24" selection-end-line="45" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docker-compose.dev.windows.vmware.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="104" column="36" lean-forward="true" selection-start-line="104" selection-start-column="36" selection-end-line="104" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/docker-compose.website.bamboo.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1035">
@@ -1075,8 +1067,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/staging/docker-compose.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="161" column="69" selection-start-line="161" selection-start-column="69" selection-end-line="161" selection-end-column="69" />
+        <state relative-caret-position="2642">
+          <caret line="162" column="45" selection-start-line="162" selection-start-column="45" selection-end-line="162" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="193" column="24" lean-forward="true" selection-start-line="184" selection-start-column="1" selection-end-line="193" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker-compose.dev.windows.vmware.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4439">
+          <caret line="193" column="24" selection-start-line="193" selection-start-column="24" selection-end-line="193" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker-compose.dev.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="518">
+          <caret line="191" column="24" lean-forward="true" selection-start-line="182" selection-start-column="2" selection-end-line="191" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker-compose.api.bamboo.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="530">
+          <caret line="52" column="36" selection-start-line="52" selection-start-column="36" selection-end-line="52" selection-end-column="36" />
         </state>
       </provider>
     </entry>

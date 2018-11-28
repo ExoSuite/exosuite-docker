@@ -45,6 +45,15 @@ services:
     networks:
       - exosuite-network
 
+  exosuite-elasticsearch:
+    restart: ${RESTART_MODE}
+    container_name: exosuite-elasticsearch-${BUILD_NUMBER}
+    image: docker.elastic.co/elasticsearch/elasticsearch:6.5.1
+    environment:
+      - "discovery.type=single-node"
+    networks:
+      - exosuite-network
+
 networks:
   exosuite-network:
     driver: bridge
