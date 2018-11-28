@@ -132,6 +132,39 @@ services:
     depends_on:
       - exosuite-redis-live
 
+  exosuite-elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:6.5.1
+    container_name: exosuite-elasticsearch-main
+    environment:
+      - cluster.name=docker-cluster
+      - bootstrap.memory_lock=true
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    volumes:
+      - /var/www/exosuite-elasticsearch-main:/usr/share/elasticsearch/data
+    networks:
+      - exosuite-network
+
+  exosuite-elasticsearch-node:
+    image: docker.elastic.co/elasticsearch/elasticsearch:6.5.1
+    container_name: exosuite-elasticsearch-node
+    environment:
+      - cluster.name=docker-cluster
+      - bootstrap.memory_lock=true
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+      - "discovery.zen.ping.unicast.hosts=exosuite-elasticsearch"
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    volumes:
+      - /var/www/exosuite-elasticsearch-node:/usr/share/elasticsearch/data
+    networks:
+      - exosuite-network
+
 networks:
   exosuite-network:
     driver: bridge
