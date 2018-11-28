@@ -34,7 +34,7 @@ services:
 
   exosuite-website-postgres:
     restart: ${RESTART_MODE}
-    image: postgres:11-alpine
+    image: postgres:11.1-alpine
     container_name: exosuite-website-postgres-${BUILD_NUMBER}
     environment:
       - POSTGRES_DB=exosuite-website
