@@ -90,7 +90,7 @@ services:
     environment:
       - POSTGRES_DB=exosuite-website
       - POSTGRES_USER=exosuite
-      - POSTGRES_PASSWORD=kP6N]d>m5SJv8NG/
+      - POSTGRES_PASSWORD=w8RP3#Ex++8EdHaH
       - PGDATA=/var/lib/postgresql/data/pgdata
     networks:
       - exosuite-network
