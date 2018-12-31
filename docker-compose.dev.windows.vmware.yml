@@ -129,6 +129,7 @@ services:
       - "6001:6001"
     depends_on:
       - exosuite-redis-live
+      - exosuite-redis-store
 
   exosuite-redis-store:
     restart: ${RESTART_MODE}
