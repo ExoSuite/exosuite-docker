@@ -22,6 +22,7 @@ services:
         - FPM_SERVER=exosuite-website-php-fpm-${BUILD_NUMBER}
         - ROOT_PATH=${STORAGE_PATH}/${WEBSITE_FOLDER_NAME}
         - SERVER_NAME=exosuite.${BUILD_NUMBER}.local
+        - APP_NAME=app.exosuite.${BUILD_NUMBER}.local
         - DB_HOST=exosuite-website-postgres-${BUILD_NUMBER}
     container_name: nginx-website-${BUILD_NUMBER}
     depends_on:
