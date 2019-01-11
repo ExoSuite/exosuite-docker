@@ -13,9 +13,7 @@ services:
       - zalenium_exosuite-tests
 
   nginx-website:
-    hostname: exosuite.${BUILD_NUMBER}.local
-    extra_hosts:
-      - "app.exosuite.${BUILD_NUMBER}.local:127.0.0.1"
+    hostname: "exosuite.${BUILD_NUMBER}.local app.exosuite.${BUILD_NUMBER}.local"
     restart: ${RESTART_MODE}
     build:
       context: ./server_confs/${ENVIRONMENT}/website
