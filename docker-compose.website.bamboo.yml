@@ -13,7 +13,7 @@ services:
       - zalenium_exosuite-tests
 
   nginx-website:
-    hostname: exosuite.${BUILD_NUMBER}.local
+    hostname: "exosuite.${BUILD_NUMBER}.local"
     restart: ${RESTART_MODE}
     build:
       context: ./server_confs/${ENVIRONMENT}/website
@@ -22,6 +22,7 @@ services:
         - FPM_SERVER=exosuite-website-php-fpm-${BUILD_NUMBER}
         - ROOT_PATH=${STORAGE_PATH}/${WEBSITE_FOLDER_NAME}
         - SERVER_NAME=exosuite.${BUILD_NUMBER}.local
+        - APP_NAME=app.exosuite.${BUILD_NUMBER}.local
         - DB_HOST=exosuite-website-postgres-${BUILD_NUMBER}
     container_name: nginx-website-${BUILD_NUMBER}
     depends_on:
@@ -30,7 +31,9 @@ services:
     volumes:
       - ${WEBSITE_FOLDER_PATH}:${STORAGE_PATH}/${WEBSITE_FOLDER_NAME}
     networks:
-      - zalenium_exosuite-tests
+      zalenium_exosuite-tests:
+        aliases:
+          - app.exosuite.${BUILD_NUMBER}.local
 
   exosuite-website-postgres:
     restart: ${RESTART_MODE}

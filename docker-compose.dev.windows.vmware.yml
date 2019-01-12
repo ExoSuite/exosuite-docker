@@ -26,7 +26,7 @@ services:
       - exosuite-network
 
   nginx-website:
-    hostname: exosuite.local
+    hostname: exosuite.local app.exosuite.local
     restart: ${RESTART_MODE}
     build:
       context: ./server_confs/${ENVIRONMENT}
@@ -42,7 +42,7 @@ services:
       - exosuite-network
 
   exosuite-nginx:
-    hostname: exosuite.local api.exosuite.local
+    hostname: exosuite.local api.exosuite.local app.exosuite.local
     restart: ${RESTART_MODE}
     ports:
       - ${NGINX_PORT}
