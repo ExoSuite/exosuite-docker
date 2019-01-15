@@ -48,7 +48,7 @@ services:
   exosuite-elasticsearch:
     restart: ${RESTART_MODE}
     container_name: exosuite-elasticsearch-${BUILD_NUMBER}
-    image: docker.elastic.co/elasticsearch/elasticsearch:6.5.1
+    image: docker.elastic.co/elasticsearch/elasticsearch:6.5.4
     environment:
       - "discovery.type=single-node"
     networks:
