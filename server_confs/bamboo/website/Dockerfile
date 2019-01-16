@@ -1,4 +1,4 @@
-FROM nginx:stable-alpine
+FROM pagespeed/nginx-pagespeed:stable-alpine3.8-ngx1.15
 
 ARG CONFIG_FILE
 ARG FPM_SERVER
@@ -24,3 +24,5 @@ RUN envsubst \$FPM_SERVER,\$SERVER_NAME,\$ROOT_PATH,\$APP_NAME < /etc/nginx/conf
 RUN rm /etc/nginx/conf.d/default.template
 
 COPY ./nginx.conf /etc/nginx
+
+COPY pagespeed.conf /etc/nginx
