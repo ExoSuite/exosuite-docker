@@ -133,8 +133,6 @@ services:
     restart: ${RESTART_MODE}
     container_name: exosuite-redis-store
     image: redis:alpine
-    volumes:
-      - ${STORAGE_PATH}/exosuite-redis-store:/data
     networks:
       - exosuite-network
     command: ["sh", "-c",'docker-entrypoint.sh --appendonly yes']
@@ -145,8 +143,6 @@ services:
     restart: ${RESTART_MODE}
     container_name: exosuite-redis-live
     image: redis:alpine
-    volumes:
-      - ${STORAGE_PATH}/exosuite-redis-live:/data
     networks:
       - exosuite-network
     command: ["sh", "-c",'docker-entrypoint.sh --appendonly yes']
@@ -189,6 +185,19 @@ services:
       - "discovery.type=single-node"
     ports:
       - "9200:9200"
+    networks:
+      - exosuite-network
+
+  exosuite-vsftpd:
+    container_name: exosuite-vsftpd
+    image: fauria/vsftpd
+    environment:
+      - FTP_USER=exosuite
+      - FTP_PASS=root
+      - PASV_ENABLE=NO
+    ports:
+      - "20:20"
+      - "21:21"
     networks:
       - exosuite-network
 
