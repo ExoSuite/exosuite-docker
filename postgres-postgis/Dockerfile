@@ -16,3 +16,4 @@ COPY ./initdb-postgis.sh /docker-entrypoint-initdb.d/postgis.sh
 COPY ./update-postgis.sh /usr/local/bin
 
 RUN chmod 755 /usr/local/bin/update-postgis.sh
+RUN chmod 755 /docker-entrypoint-initdb.d/postgis.sh
