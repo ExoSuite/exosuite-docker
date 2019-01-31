@@ -84,8 +84,7 @@ services:
 
   exosuite-api-postgres:
     restart: ${RESTART_MODE}
-    build:
-      context: ./postgres-postgis
+    image: mdillon/postgis:11-alpine
     ports:
       - ${API_POSTGRES_PORT}
     container_name: exosuite-api-postgres

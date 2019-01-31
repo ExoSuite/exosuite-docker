@@ -3,8 +3,7 @@ version: '3'
 services:
 
   exosuite-users-api-postgres:
-    build:
-      context: ./postgres-postgis
+    image: mdillon/postgis:11-alpine
     container_name: exosuite-users-api-postgres-${BUILD_NUMBER}
     environment:
       - POSTGRES_DB=exosuite-users-api
