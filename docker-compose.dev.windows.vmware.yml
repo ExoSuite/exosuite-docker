@@ -191,6 +191,7 @@ services:
       - exosuite-network
 
   exosuite-vsftpd:
+    restart: ${RESTART_MODE}
     container_name: exosuite-vsftpd
     image: fauria/vsftpd
     environment:

@@ -14,7 +14,6 @@ services:
 
   nginx-website:
     hostname: "exosuite.${BUILD_NUMBER}.local"
-    restart: ${RESTART_MODE}
     build:
       context: ./server_confs/${ENVIRONMENT}/website
       args:
@@ -36,7 +35,6 @@ services:
           - app.exosuite.${BUILD_NUMBER}.local
 
   exosuite-website-postgres:
-    restart: ${RESTART_MODE}
     image: postgres:11.1-alpine
     container_name: exosuite-website-postgres-${BUILD_NUMBER}
     environment:
