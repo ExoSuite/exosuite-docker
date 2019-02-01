@@ -2,7 +2,7 @@ version: '3'
 
 services:
 
-  exosuite-api-php-fpm:
+  exosuite-users-api-php-fpm:
     working_dir: ${STORAGE_PATH}/${API_FOLDER_NAME}
     build:
       context: ./php-fpm
