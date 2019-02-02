@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3210a84e-5e86-4379-ac7d-7a9044aa39da" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.api.bamboo.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.api.bamboo.yml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,11 +29,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/docker-compose.api.bamboo.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="25" column="24" lean-forward="true" selection-start-line="25" selection-start-column="2" selection-end-line="25" selection-end-column="24" />
+            <state relative-caret-position="169">
+              <caret line="8" column="50" lean-forward="true" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/bamboo-down-cmd.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="46">
+              <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -116,7 +124,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/docker-compose.prod.yml" />
         <option value="$PROJECT_DIR$/prod/docker-compose.prod.yml" />
         <option value="$PROJECT_DIR$/prod/users-api/docker-compose.prod.yml" />
         <option value="$PROJECT_DIR$/prod/users-api/database/docker-compose.yml" />
@@ -167,6 +174,7 @@
         <option value="$PROJECT_DIR$/php-fpm/Dockerfile" />
         <option value="$PROJECT_DIR$/laravel-artisan/Dockerfile" />
         <option value="$PROJECT_DIR$/docker-compose.api.bamboo.yml" />
+        <option value="$PROJECT_DIR$/bamboo-down-cmd.sh" />
       </list>
     </option>
   </component>
@@ -192,16 +200,6 @@
               <item name="exosuite-docker" type="b2602c69:ProjectViewProjectNode" />
               <item name="exosuite-docker" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="exosuite-docker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exosuite-docker" type="462c0819:PsiDirectoryNode" />
-              <item name="laravel-artisan" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="exosuite-docker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exosuite-docker" type="462c0819:PsiDirectoryNode" />
-              <item name="php-fpm" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -212,7 +210,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/docker-compose.yml" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549065513491" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549067247824" />
     <property name="ignore_missing_gitignore" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -360,14 +358,7 @@
       <workItem from="1548802217066" duration="1502000" />
       <workItem from="1548870555523" duration="10643000" />
       <workItem from="1548903651223" duration="14000" />
-      <workItem from="1549055046193" duration="3110000" />
-    </task>
-    <task id="LOCAL-00056" summary="add staging https">
-      <created>1538879039645</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1538879039645</updated>
+      <workItem from="1549055046193" duration="3546000" />
     </task>
     <task id="LOCAL-00057" summary="fix">
       <created>1538881366113</created>
@@ -705,11 +696,18 @@
       <option name="project" value="LOCAL" />
       <updated>1549062814065</updated>
     </task>
-    <option name="localTasksCounter" value="105" />
+    <task id="LOCAL-00105" summary="remove">
+      <created>1549065567464</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1549065567464</updated>
+    </task>
+    <option name="localTasksCounter" value="106" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="193835000" />
+    <option name="totallyTimeSpent" value="194271000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -753,7 +751,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="fix" />
     <MESSAGE value="add horizon and scheduler" />
     <MESSAGE value="update with new containers" />
     <MESSAGE value="update for scheduler" />
@@ -778,10 +775,10 @@
     <MESSAGE value="potential fix for database crash" />
     <MESSAGE value="add memcached" />
     <MESSAGE value="re add php" />
-    <option name="LAST_COMMIT_MESSAGE" value="re add php" />
+    <MESSAGE value="remove" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/server_confs/prod/snippets/fastcgi-php.conf" />
     <entry file="file://$PROJECT_DIR$/server_confs/staging/snippets/fastcgi-php.conf" />
     <entry file="file://$PROJECT_DIR$/server_confs/bamboo/website/snippets/fastcgi-php.conf">
       <provider selected="true" editor-type-id="text-editor" />
@@ -995,8 +992,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/docker-compose.api.bamboo.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="25" column="24" lean-forward="true" selection-start-line="25" selection-start-column="2" selection-end-line="25" selection-end-column="24" />
+        <state relative-caret-position="169">
+          <caret line="8" column="50" lean-forward="true" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bamboo-down-cmd.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
         </state>
       </provider>
     </entry>
