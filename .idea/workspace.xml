@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3210a84e-5e86-4379-ac7d-7a9044aa39da" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.api.bamboo.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.api.bamboo.yml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,16 +30,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/docker-compose.api.bamboo.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
-              <caret line="8" column="50" lean-forward="true" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
+            <state relative-caret-position="218">
+              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bamboo-down-cmd.sh">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="46">
@@ -173,8 +174,8 @@
         <option value="$PROJECT_DIR$/docker-compose.yml" />
         <option value="$PROJECT_DIR$/php-fpm/Dockerfile" />
         <option value="$PROJECT_DIR$/laravel-artisan/Dockerfile" />
-        <option value="$PROJECT_DIR$/docker-compose.api.bamboo.yml" />
         <option value="$PROJECT_DIR$/bamboo-down-cmd.sh" />
+        <option value="$PROJECT_DIR$/docker-compose.api.bamboo.yml" />
       </list>
     </option>
   </component>
@@ -210,7 +211,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/docker-compose.yml" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549067257814" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549068543471" />
     <property name="ignore_missing_gitignore" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -358,21 +359,7 @@
       <workItem from="1548802217066" duration="1502000" />
       <workItem from="1548870555523" duration="10643000" />
       <workItem from="1548903651223" duration="14000" />
-      <workItem from="1549055046193" duration="3546000" />
-    </task>
-    <task id="LOCAL-00057" summary="fix">
-      <created>1538881366113</created>
-      <option name="number" value="00057" />
-      <option name="presentableId" value="LOCAL-00057" />
-      <option name="project" value="LOCAL" />
-      <updated>1538881366113</updated>
-    </task>
-    <task id="LOCAL-00058" summary="fix">
-      <created>1538882559799</created>
-      <option name="number" value="00058" />
-      <option name="presentableId" value="LOCAL-00058" />
-      <option name="project" value="LOCAL" />
-      <updated>1538882559800</updated>
+      <workItem from="1549055046193" duration="4238000" />
     </task>
     <task id="LOCAL-00059" summary="add prod">
       <created>1538886873646</created>
@@ -703,11 +690,25 @@
       <option name="project" value="LOCAL" />
       <updated>1549065567464</updated>
     </task>
-    <option name="localTasksCounter" value="106" />
+    <task id="LOCAL-00106" summary="remove">
+      <created>1549067256981</created>
+      <option name="number" value="00106" />
+      <option name="presentableId" value="LOCAL-00106" />
+      <option name="project" value="LOCAL" />
+      <updated>1549067256981</updated>
+    </task>
+    <task id="LOCAL-00107" summary="remove">
+      <created>1549067266560</created>
+      <option name="number" value="00107" />
+      <option name="presentableId" value="LOCAL-00107" />
+      <option name="project" value="LOCAL" />
+      <updated>1549067266560</updated>
+    </task>
+    <option name="localTasksCounter" value="108" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="194271000" />
+    <option name="totallyTimeSpent" value="194963000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -990,17 +991,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docker-compose.api.bamboo.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="8" column="50" lean-forward="true" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bamboo-down-cmd.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
           <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker-compose.api.bamboo.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
         </state>
       </provider>
     </entry>

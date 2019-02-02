@@ -6,7 +6,7 @@ services:
     working_dir: ${STORAGE_PATH}/${API_FOLDER_NAME}
     build:
       context: ./php-fpm
-    container_name: exosuite-api-php-fpm-${BUILD_NUMBER}
+    container_name: exosuite-api-php-fpm
     volumes:
       - ${API_FOLDER_PATH}:${STORAGE_PATH}/${API_FOLDER_NAME}
     networks:
@@ -14,7 +14,7 @@ services:
 
   exosuite-users-api-postgres:
     image: mdillon/postgis:11-alpine
-    container_name: exosuite-users-api-postgres-${BUILD_NUMBER}
+    container_name: exosuite-users-api-postgres
     environment:
       - POSTGRES_DB=exosuite-users-api
       - POSTGRES_USER=exosuite
@@ -24,7 +24,7 @@ services:
       - exosuite-network
 
   exosuite-elasticsearch:
-    container_name: exosuite-elasticsearch-${BUILD_NUMBER}
+    container_name: exosuite-elasticsearch
     image: docker.elastic.co/elasticsearch/elasticsearch:6.5.4
     environment:
       - "discovery.type=single-node"
