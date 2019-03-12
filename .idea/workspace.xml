@@ -4,10 +4,12 @@
     <bookmark url="file://$PROJECT_DIR$/../exosuite-docker-server/php-fpm/template.Dockerfile" description="&#10;RUN docker-php-ext-configure gd \&#10;        --with-..." line="13" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3210a84e-5e86-4379-ac7d-7a9044aa39da" name="Default Changelist" comment="">
+    <list default="true" id="3210a84e-5e86-4379-ac7d-7a9044aa39da" name="Default Changelist" comment="update php to 7.3.3">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel-artisan/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/laravel-artisan/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-fpm/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/php-fpm/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_confs/dev/exosuite.conf" beforeDir="false" afterPath="$PROJECT_DIR$/server_confs/dev/exosuite.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_confs/dev/reverse/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/server_confs/dev/reverse/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_confs/dev/reverse/exosuite.conf" beforeDir="false" afterPath="$PROJECT_DIR$/server_confs/dev/reverse/exosuite.conf" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,39 +32,39 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php-fpm/Dockerfile">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/docker-compose.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+            <state relative-caret-position="296">
+              <caret line="42" column="30" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/laravel-artisan/Dockerfile">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server_confs/dev/reverse/Dockerfile">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="115">
-              <caret line="5" column="20" lean-forward="true" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+              <caret line="5" column="92" selection-start-line="5" selection-start-column="92" selection-end-line="5" selection-end-column="92" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server_confs/dev/Dockerfile">
+        <entry file="file://$PROJECT_DIR$/server_confs/dev/reverse/exosuite.conf">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46">
-              <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="49" />
+            <state relative-caret-position="69">
+              <caret line="3" column="71" lean-forward="true" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="71" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/docker-compose.dev.yml">
+        <entry file="file://$PROJECT_DIR$/server_confs/dev/exosuite.conf">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1311">
-              <caret line="57" column="18" selection-start-line="57" selection-start-column="18" selection-end-line="57" selection-end-column="18" />
+            <state relative-caret-position="161">
+              <caret line="7" column="71" selection-start-line="7" selection-start-column="71" selection-end-line="7" selection-end-column="71" />
             </state>
           </provider>
         </entry>
@@ -71,9 +73,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>DB_HOST</find>
-      <find>API_</find>
-      <find>exosuite-api-php-fpm</find>
       <find>API_FOLDER_PATH</find>
       <find>API</find>
       <find>exosuite-users-api</find>
@@ -101,6 +100,9 @@
       <find>phan</find>
       <find>ela</find>
       <find>7.3.2</find>
+      <find>elasti</find>
+      <find>6.5.4</find>
+      <find>nginx</find>
     </findStrings>
     <replaceStrings>
       <replace>- ${API_FOLDER_PATH}:${STORAGE_PATH}/${API_FOLDER_NAME}</replace>
@@ -162,16 +164,13 @@
         <option value="$PROJECT_DIR$/server_confs/bamboo/website/Dockerfile" />
         <option value="$PROJECT_DIR$/php-fpm/bamboo/www.conf" />
         <option value="$PROJECT_DIR$/php-fpm/bamboo/Dockerfile" />
-        <option value="$PROJECT_DIR$/server_confs/dev/reverse/Dockerfile" />
         <option value="$PROJECT_DIR$/server_confs/dev/reverse/api.exosuite.conf" />
         <option value="$PROJECT_DIR$/server_confs/dev/api.exosuite.conf" />
         <option value="$PROJECT_DIR$/postgres-postgis/#Dockerfile#" />
         <option value="$PROJECT_DIR$/staging/docker-compose.yml" />
         <option value="$PROJECT_DIR$/postgres-postgis/initdb-postgis.sh" />
         <option value="$PROJECT_DIR$/postgres-postgis/docker-entrypoint.sh" />
-        <option value="$PROJECT_DIR$/server_confs/dev/exosuite.conf" />
         <option value="$PROJECT_DIR$/server_confs/bamboo/website/exosuite.conf" />
-        <option value="$PROJECT_DIR$/server_confs/dev/reverse/exosuite.conf" />
         <option value="$PROJECT_DIR$/server_confs/dev/pagespeed.conf" />
         <option value="$PROJECT_DIR$/server_confs/bamboo/api/api.exosuite.conf" />
         <option value="$PROJECT_DIR$/server_confs/bamboo/api/pagespeed.conf" />
@@ -187,15 +186,17 @@
         <option value="$PROJECT_DIR$/php-fpm/Dockerfile" />
         <option value="$PROJECT_DIR$/temp" />
         <option value="$PROJECT_DIR$/phpunit-printer.yml" />
-        <option value="$PROJECT_DIR$/docker-compose.yml" />
         <option value="$PROJECT_DIR$/laravel-artisan/Dockerfile" />
+        <option value="$PROJECT_DIR$/server_confs/dev/reverse/exosuite.conf" />
+        <option value="$PROJECT_DIR$/server_confs/dev/exosuite.conf" />
+        <option value="$PROJECT_DIR$/server_confs/dev/reverse/Dockerfile" />
+        <option value="$PROJECT_DIR$/docker-compose.yml" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="width" value="1440" />
-    <option name="height" value="816" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -222,6 +223,24 @@
               <item name="exosuite-docker" type="b2602c69:ProjectViewProjectNode" />
               <item name="exosuite-docker" type="462c0819:PsiDirectoryNode" />
               <item name="php-fpm" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="exosuite-docker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="exosuite-docker" type="462c0819:PsiDirectoryNode" />
+              <item name="server_confs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="exosuite-docker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="exosuite-docker" type="462c0819:PsiDirectoryNode" />
+              <item name="server_confs" type="462c0819:PsiDirectoryNode" />
+              <item name="dev" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="exosuite-docker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="exosuite-docker" type="462c0819:PsiDirectoryNode" />
+              <item name="server_confs" type="462c0819:PsiDirectoryNode" />
+              <item name="dev" type="462c0819:PsiDirectoryNode" />
+              <item name="reverse" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -398,14 +417,9 @@
       <workItem from="1551924435215" duration="65000" />
       <workItem from="1551924624705" duration="1008000" />
       <workItem from="1551972446636" duration="230000" />
-      <workItem from="1552359092876" duration="241000" />
-    </task>
-    <task id="LOCAL-00062" summary="add horizon and scheduler">
-      <created>1539639787337</created>
-      <option name="number" value="00062" />
-      <option name="presentableId" value="LOCAL-00062" />
-      <option name="project" value="LOCAL" />
-      <updated>1539639787338</updated>
+      <workItem from="1552359092876" duration="601000" />
+      <workItem from="1552359870474" duration="1481000" />
+      <workItem from="1552424649483" duration="618000" />
     </task>
     <task id="LOCAL-00063" summary="update">
       <created>1540480369684</created>
@@ -743,17 +757,24 @@
       <option name="project" value="LOCAL" />
       <updated>1551385693469</updated>
     </task>
-    <option name="localTasksCounter" value="111" />
+    <task id="LOCAL-00111" summary="update php to 7.3.3">
+      <created>1552359593807</created>
+      <option name="number" value="00111" />
+      <option name="presentableId" value="LOCAL-00111" />
+      <option name="project" value="LOCAL" />
+      <updated>1552359593807</updated>
+    </task>
+    <option name="localTasksCounter" value="112" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="203904000" />
+    <option name="totallyTimeSpent" value="206363000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="816" extended-state="0" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3040057" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3125894" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="Designer" order="3" />
@@ -770,7 +791,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" weight="0.55651104" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32923833" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49946752" visible="true" weight="0.3121469" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49946752" visible="true" weight="0.31203932" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5005325" side_tool="true" weight="0.32711306" />
       <window_info anchor="bottom" id="Messages" order="12" />
       <window_info anchor="bottom" id="Python Console" order="13" />
@@ -791,7 +812,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="update for bcmath" />
     <MESSAGE value="add postgis" />
     <MESSAGE value="update" />
     <MESSAGE value="fix postgis" />
@@ -816,7 +836,8 @@
     <MESSAGE value="try to fix remove zombie container" />
     <MESSAGE value="add testing container" />
     <MESSAGE value="update containers" />
-    <option name="LAST_COMMIT_MESSAGE" value="update containers" />
+    <MESSAGE value="update php to 7.3.3" />
+    <option name="LAST_COMMIT_MESSAGE" value="update php to 7.3.3" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/server_confs/bamboo/website/api.exosuite.conf" />
@@ -833,20 +854,6 @@
     <entry file="file://$PROJECT_DIR$/php-fpm/bamboo/Dockerfile" />
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/redis/RedisCluster.php" />
     <entry file="file://$PROJECT_DIR$/postgres-postgis/#Dockerfile#" />
-    <entry file="file://$PROJECT_DIR$/server_confs/dev/reverse/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="49" selection-start-line="3" selection-start-column="49" selection-end-line="3" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server_confs/dev/reverse/api.exosuite.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="35" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/laravel-artisan/docker-php-entrypoint.sh" />
     <entry file="file://$PROJECT_DIR$/prod/docker-compose.yml" />
     <entry file="file://$PROJECT_DIR$/postgres-postgis/docker-entrypoint.sh" />
@@ -855,20 +862,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
           <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server_confs/dev/exosuite.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="49" selection-start-line="7" selection-start-column="49" selection-end-line="7" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server_confs/dev/reverse/exosuite.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="49" selection-start-line="3" selection-start-column="49" selection-end-line="3" selection-end-column="49" />
         </state>
       </provider>
     </entry>
@@ -956,13 +949,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/postgres-postgis/Dockerfile" />
-    <entry file="file://$PROJECT_DIR$/docker-compose.dev.windows.vmware.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
-          <caret line="86" column="4" selection-start-line="86" selection-start-column="4" selection-end-line="86" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.env">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -975,17 +961,17 @@
     <entry file="file://$PROJECT_DIR$/laravel-artisan/testing/Dockerfile" />
     <entry file="file://$PROJECT_DIR$/temp" />
     <entry file="file://$PROJECT_DIR$/phpunit-printer.yml" />
-    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
+    <entry file="file://$PROJECT_DIR$/docker-compose.dev.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2531">
-          <caret line="185" column="10" lean-forward="true" selection-start-line="185" selection-start-column="10" selection-end-line="185" selection-end-column="10" />
+        <state relative-caret-position="303">
+          <caret line="181" column="57" lean-forward="true" selection-start-line="181" selection-start-column="57" selection-end-line="181" selection-end-column="62" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docker-compose.dev.yml">
+    <entry file="file://$PROJECT_DIR$/docker-compose.dev.windows.vmware.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1311">
-          <caret line="57" column="18" selection-start-line="57" selection-start-column="18" selection-end-line="57" selection-end-column="18" />
+        <state relative-caret-position="185">
+          <caret line="183" column="62" selection-start-line="183" selection-start-column="57" selection-end-line="183" selection-end-column="62" />
         </state>
       </provider>
     </entry>
@@ -996,6 +982,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/laravel-artisan/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-283">
+          <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/php-fpm/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
@@ -1003,10 +996,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/laravel-artisan/Dockerfile">
+    <entry file="file://$PROJECT_DIR$/server_confs/dev/reverse/api.exosuite.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="35" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server_confs/dev/reverse/exosuite.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="71" lean-forward="true" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server_confs/dev/exosuite.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="71" selection-start-line="7" selection-start-column="71" selection-end-line="7" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server_confs/dev/reverse/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
-          <caret line="5" column="20" lean-forward="true" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+          <caret line="5" column="92" selection-start-line="5" selection-start-column="92" selection-end-line="5" selection-end-column="92" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="42" column="30" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
         </state>
       </provider>
     </entry>
