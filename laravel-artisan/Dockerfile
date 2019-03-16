@@ -1,9 +1,7 @@
 FROM php:7.3.3-cli-alpine
 
-ARG COMMAND
-ARG WORKDIR
-ENV COMMAND $COMMAND
-ENV WORKDIR $WORKDIR
+ARG ENTRYPOINT_DIR
+ENV WORKDIR "/var/www/exosuite-users-api"
 
 RUN set -ex \
   && apk --no-cache add \
@@ -42,5 +40,10 @@ RUN set -xe && \
     rm -rf /tmp/* && \
     apk del .memcached-deps .phpize-deps
 
+WORKDIR "/var/www/exosuite-users-api"
 
-CMD ["sh", "-c", "php $WORKDIR/artisan $COMMAND"]
+COPY $ENTRYPOINT_DIR/laravel-artisan-entrypoint.sh /usr/local/bin/laravel-artisan-entrypoint
+
+RUN chmod +x /usr/local/bin/laravel-artisan-entrypoint
+
+CMD ["sh", "-c", "/usr/local/bin/laravel-artisan-entrypoint"]
