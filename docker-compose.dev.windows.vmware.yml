@@ -153,11 +153,10 @@ services:
     container_name: exosuite-laravel-horizon
     build:
       context: laravel-artisan
+      args:
+        ENTRYPOINT_DIR: horizon
     volumes:
       - ${API_FOLDER_PATH}:${STORAGE_PATH}/${API_FOLDER_NAME}
-    environment:
-      - COMMAND=horizon
-      - WORKDIR=${STORAGE_PATH}/${API_FOLDER_NAME}
     networks:
       - exosuite-network
     depends_on:
@@ -168,11 +167,10 @@ services:
     container_name: exosuite-scheduler
     build:
       context: laravel-artisan
+      args:
+        ENTRYPOINT_DIR: scheduler
     volumes:
       - ${API_FOLDER_PATH}:${STORAGE_PATH}/${API_FOLDER_NAME}
-    environment:
-      - COMMAND=schedule:daemon
-      - WORKDIR=${STORAGE_PATH}/${API_FOLDER_NAME}
     networks:
       - exosuite-network
     depends_on:
