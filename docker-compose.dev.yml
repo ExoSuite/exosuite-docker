@@ -24,7 +24,7 @@ services:
       - exosuite-network
 
   nginx-website:
-    hostname: exosuite.local app.exosuite.local
+    hostname: exosuite.local app.exosuite.local gandalf.exosuite.local
     restart: ${RESTART_MODE}
     build:
       context: ./server_confs/${ENVIRONMENT}

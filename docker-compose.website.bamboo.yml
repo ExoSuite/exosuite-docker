@@ -22,6 +22,7 @@ services:
         - ROOT_PATH=${STORAGE_PATH}/${WEBSITE_FOLDER_NAME}
         - SERVER_NAME=exosuite.${BUILD_NUMBER}.local
         - APP_NAME=app.exosuite.${BUILD_NUMBER}.local
+        - ADMIN_NAME=gandalf.exosuite.${BUILD_NUMBER}.local
         - DB_HOST=exosuite-website-postgres-${BUILD_NUMBER}
     container_name: nginx-website-${BUILD_NUMBER}
     depends_on:
@@ -33,6 +34,7 @@ services:
       zalenium_exosuite-tests:
         aliases:
           - app.exosuite.${BUILD_NUMBER}.local
+          - gandalf.exosuite.${BUILD_NUMBER}.local
 
   exosuite-website-postgres:
     image: postgres:11.1-alpine
