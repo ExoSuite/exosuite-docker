@@ -1,3 +1,7 @@
 #!/usr/bin/env sh
 
-$(which php) ${WORKDIR}/artisan horizon
+if [[ "$BUILT_FOR" == "dev" ]]; then
+    $(which php) ${WORKDIR}/artisan horizon
+else
+ tail -f /dev/null
+fi
