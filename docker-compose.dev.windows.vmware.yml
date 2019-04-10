@@ -158,8 +158,7 @@ services:
     volumes:
       - ${API_FOLDER_PATH}:${STORAGE_PATH}/${API_FOLDER_NAME}
     environment:
-      - COMMAND=horizon
-      - WORKDIR=${STORAGE_PATH}/${API_FOLDER_NAME}
+      - BUILT_FOR=dev
     networks:
       - exosuite-network
     depends_on:
@@ -174,9 +173,6 @@ services:
         ENTRYPOINT_DIR: scheduler
     volumes:
       - ${API_FOLDER_PATH}:${STORAGE_PATH}/${API_FOLDER_NAME}
-    environment:
-      - COMMAND=schedule:daemon
-      - WORKDIR=${STORAGE_PATH}/${API_FOLDER_NAME}
     networks:
       - exosuite-network
     depends_on:

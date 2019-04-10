@@ -2,7 +2,6 @@ FROM php:7.3.4-cli-alpine
 
 ARG ENTRYPOINT_DIR
 ENV WORKDIR "/var/www/exosuite-users-api"
-ENV BUILT_FOR "DEV"
 
 RUN set -ex \
   && apk --no-cache add \

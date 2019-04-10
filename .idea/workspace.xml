@@ -6,8 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="3210a84e-5e86-4379-ac7d-7a9044aa39da" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.dev.windows.vmware.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.dev.windows.vmware.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.dev.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/laravel-artisan/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/laravel-artisan/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel-artisan/horizon/laravel-artisan-entrypoint.sh" beforeDir="false" afterPath="$PROJECT_DIR$/laravel-artisan/horizon/laravel-artisan-entrypoint.sh" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,17 +35,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/docker-compose.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3772">
-              <caret line="164" column="28" selection-start-line="164" selection-start-column="28" selection-end-line="164" selection-end-column="28" />
+            <state relative-caret-position="524">
+              <caret line="177" column="36" lean-forward="true" selection-start-line="149" selection-start-column="2" selection-end-line="177" selection-end-column="36" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/laravel-artisan/horizon/laravel-artisan-entrypoint.sh">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docker-compose.dev.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+            <state relative-caret-position="413">
+              <caret line="169" column="11" lean-forward="true" selection-start-line="169" selection-start-column="11" selection-end-line="169" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -52,8 +53,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/laravel-artisan/Dockerfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+            <state relative-caret-position="81">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
         </entry>
@@ -67,11 +68,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/docker-compose.dev.windows.vmware.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3772">
-              <caret line="164" column="21" selection-start-line="164" selection-start-column="21" selection-end-line="164" selection-end-column="21" />
+            <state relative-caret-position="204">
+              <caret line="165" lean-forward="true" selection-start-line="165" selection-end-line="165" />
             </state>
           </provider>
         </entry>
@@ -88,8 +89,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/docker-compose.website.bamboo.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="828">
-              <caret line="36" column="28" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
+            <state relative-caret-position="874">
+              <caret line="38" column="28" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -236,14 +237,14 @@
         <option value="$PROJECT_DIR$/laravel-artisan/scheduler/entrypoint.sh" />
         <option value="$PROJECT_DIR$/laravel-artisan/horizon/entrypoint.sh" />
         <option value="$PROJECT_DIR$/laravel-artisan/scheduler/laravel-artisan-entrypoint.sh" />
-        <option value="$PROJECT_DIR$/docker-compose.dev.yml" />
-        <option value="$PROJECT_DIR$/docker-compose.yml" />
-        <option value="$PROJECT_DIR$/docker-compose.dev.windows.vmware.yml" />
         <option value="$PROJECT_DIR$/server_confs/dev/reverse/Dockerfile" />
         <option value="$PROJECT_DIR$/server_confs/dev/exosuite.conf" />
         <option value="$PROJECT_DIR$/server_confs/dev/Dockerfile" />
-        <option value="$PROJECT_DIR$/laravel-artisan/Dockerfile" />
         <option value="$PROJECT_DIR$/laravel-artisan/horizon/laravel-artisan-entrypoint.sh" />
+        <option value="$PROJECT_DIR$/laravel-artisan/Dockerfile" />
+        <option value="$PROJECT_DIR$/docker-compose.yml" />
+        <option value="$PROJECT_DIR$/docker-compose.dev.yml" />
+        <option value="$PROJECT_DIR$/docker-compose.dev.windows.vmware.yml" />
       </list>
     </option>
   </component>
@@ -472,14 +473,7 @@
       <workItem from="1552861347255" duration="828000" />
       <workItem from="1553034416394" duration="1097000" />
       <workItem from="1554690870806" duration="475000" />
-      <workItem from="1554854136140" duration="230000" />
-    </task>
-    <task id="LOCAL-00069" summary="update">
-      <created>1541661053602</created>
-      <option name="number" value="00069" />
-      <option name="presentableId" value="LOCAL-00069" />
-      <option name="project" value="LOCAL" />
-      <updated>1541661053602</updated>
+      <workItem from="1554854136140" duration="656000" />
     </task>
     <task id="LOCAL-00070" summary="fix postgis">
       <created>1541974504190</created>
@@ -817,17 +811,24 @@
       <option name="project" value="LOCAL" />
       <updated>1554691425839</updated>
     </task>
-    <option name="localTasksCounter" value="118" />
+    <task id="LOCAL-00118" summary="try fix artisan entry point for testing">
+      <created>1554854459833</created>
+      <option name="number" value="00118" />
+      <option name="presentableId" value="LOCAL-00118" />
+      <option name="project" value="LOCAL" />
+      <updated>1554854459833</updated>
+    </task>
+    <option name="localTasksCounter" value="119" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="216024000" />
+    <option name="totallyTimeSpent" value="216450000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.35407725" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.35407725" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="Designer" order="3" />
@@ -844,7 +845,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" weight="0.55651104" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32923833" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49946752" visible="true" weight="0.31203932" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49946752" weight="0.31203932" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5005325" side_tool="true" weight="0.32711306" />
       <window_info anchor="bottom" id="Messages" order="12" />
       <window_info anchor="bottom" id="Python Console" order="13" />
@@ -865,7 +866,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="revert api.exosuite.conf" />
     <MESSAGE value="docker-compose prod" />
     <MESSAGE value="try fix" />
     <MESSAGE value="try fix bamboo" />
@@ -890,7 +890,8 @@
     <MESSAGE value="add artisan" />
     <MESSAGE value="add real nginx monitoring" />
     <MESSAGE value="upgrade php" />
-    <option name="LAST_COMMIT_MESSAGE" value="upgrade php" />
+    <MESSAGE value="try fix artisan entry point for testing" />
+    <option name="LAST_COMMIT_MESSAGE" value="try fix artisan entry point for testing" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -1009,13 +1010,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docker-compose.dev.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-205">
-          <caret line="154" column="31" selection-start-line="154" selection-start-column="31" selection-end-line="154" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server_confs/dev/reverse/api.exosuite.conf">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
@@ -1024,20 +1018,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server_confs/dev/pagespeed.conf" />
-    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3772">
-          <caret line="164" column="28" selection-start-line="164" selection-start-column="28" selection-end-line="164" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docker-compose.dev.windows.vmware.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3772">
-          <caret line="164" column="21" selection-start-line="164" selection-start-column="21" selection-end-line="164" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server_confs/dev/reverse/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
@@ -1047,8 +1027,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/docker-compose.website.bamboo.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="828">
-          <caret line="36" column="28" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
+        <state relative-caret-position="874">
+          <caret line="38" column="28" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -1082,15 +1062,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/laravel-artisan/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+        <state relative-caret-position="81">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/laravel-artisan/horizon/laravel-artisan-entrypoint.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+        <state relative-caret-position="138">
+          <caret line="6" column="2" lean-forward="true" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="524">
+          <caret line="177" column="36" lean-forward="true" selection-start-line="149" selection-start-column="2" selection-end-line="177" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker-compose.dev.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="413">
+          <caret line="169" column="11" lean-forward="true" selection-start-line="169" selection-start-column="11" selection-end-line="169" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker-compose.dev.windows.vmware.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="165" lean-forward="true" selection-start-line="165" selection-end-line="165" />
         </state>
       </provider>
     </entry>
