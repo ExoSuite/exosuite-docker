@@ -7,7 +7,7 @@ RUN set -ex \
   && apk --no-cache add \
     postgresql-dev autoconf g++ make libpng-dev freetype-dev libjpeg-turbo-dev libpng libjpeg-turbo freetype
 
-RUN pecl install -o -f redis \
+RUN pecl install -o -f redis-4.3.0 \
 &&  rm -rf /tmp/pear \
 &&  docker-php-ext-enable redis
 
@@ -16,6 +16,7 @@ RUN docker-php-ext-configure gd \
         --with-freetype-dir=/usr/include/ \
         --with-png-dir=/usr/include/ \
         --with-jpeg-dir=/usr/include/
+
 RUN docker-php-ext-install -j$(nproc) pdo_pgsql pcntl posix bcmath gd exif
 
 RUN apk add --no-cache --update libmemcached-libs zlib

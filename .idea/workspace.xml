@@ -34,8 +34,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/docker-compose.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2457">
-              <caret line="117" column="38" selection-start-line="117" selection-start-column="38" selection-end-line="117" selection-end-column="38" />
+            <state relative-caret-position="619">
+              <caret line="200" column="9" selection-start-line="200" selection-start-column="9" selection-end-line="200" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -52,8 +52,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/laravel-artisan/Dockerfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="9" selection-start-column="9" selection-end-column="14" />
+            <state relative-caret-position="138">
+              <caret line="9" column="28" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -107,7 +107,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>exosuite-network-api</find>
       <find>laravel-artisan</find>
       <find>schedule:run</find>
       <find>always</find>
@@ -122,7 +121,6 @@
       <find>X-XSS-Protection</find>
       <find>6.5.1</find>
       <find>FTP_PASS=4mFKMDwfaGKxmWT96GwXWD4</find>
-      <find>redis</find>
       <find>7.3.1</find>
       <find>phan</find>
       <find>ela</find>
@@ -137,6 +135,8 @@
       <find>7.3.3</find>
       <find>gan</find>
       <find>7.3.4</find>
+      <find>vs</find>
+      <find>redis</find>
     </findStrings>
     <replaceStrings>
       <replace>- ${API_FOLDER_PATH}:${STORAGE_PATH}/${API_FOLDER_NAME}</replace>
@@ -212,7 +212,6 @@
         <option value="$PROJECT_DIR$/bamboo-down-cmd.sh" />
         <option value="$PROJECT_DIR$/docker-compose.api.bamboo.yml" />
         <option value="$PROJECT_DIR$/laravel-artisan/testing/Dockerfile" />
-        <option value="$PROJECT_DIR$/php-fpm/Dockerfile" />
         <option value="$PROJECT_DIR$/temp" />
         <option value="$PROJECT_DIR$/phpunit-printer.yml" />
         <option value="$PROJECT_DIR$/server_confs/dev/reverse/exosuite.conf" />
@@ -227,6 +226,7 @@
         <option value="$PROJECT_DIR$/docker-compose.dev.yml" />
         <option value="$PROJECT_DIR$/docker-compose.dev.windows.vmware.yml" />
         <option value="$PROJECT_DIR$/laravel-artisan/Dockerfile" />
+        <option value="$PROJECT_DIR$/php-fpm/Dockerfile" />
       </list>
     </option>
   </component>
@@ -283,8 +283,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -469,14 +469,8 @@
       <workItem from="1554690870806" duration="475000" />
       <workItem from="1554854136140" duration="920000" />
       <workItem from="1555617836330" duration="6000" />
-      <workItem from="1557818715732" duration="460000" />
-    </task>
-    <task id="LOCAL-00071" summary="staging">
-      <created>1541979943736</created>
-      <option name="number" value="00071" />
-      <option name="presentableId" value="LOCAL-00071" />
-      <option name="project" value="LOCAL" />
-      <updated>1541979943736</updated>
+      <workItem from="1557818715732" duration="473000" />
+      <workItem from="1558599347933" duration="2329000" />
     </task>
     <task id="LOCAL-00072" summary="prod update">
       <created>1541980375532</created>
@@ -814,17 +808,23 @@
       <option name="project" value="LOCAL" />
       <updated>1554854934389</updated>
     </task>
-    <option name="localTasksCounter" value="120" />
+    <task id="LOCAL-00120" summary="update php">
+      <created>1557819740046</created>
+      <option name="number" value="00120" />
+      <option name="presentableId" value="LOCAL-00120" />
+      <option name="project" value="LOCAL" />
+      <updated>1557819740046</updated>
+    </task>
+    <option name="localTasksCounter" value="121" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="217180000" />
+    <option name="totallyTimeSpent" value="219522000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.36409155" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.36909872" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="Designer" order="3" />
@@ -841,7 +841,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" weight="0.55651104" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32923833" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49946752" weight="0.31203932" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49946752" visible="true" weight="0.31203932" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5005325" side_tool="true" weight="0.32711306" />
       <window_info anchor="bottom" id="Messages" order="12" />
       <window_info anchor="bottom" id="Python Console" order="13" />
@@ -862,7 +862,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="docker-compose prod" />
     <MESSAGE value="try fix" />
     <MESSAGE value="try fix bamboo" />
     <MESSAGE value="bump version" />
@@ -887,7 +886,8 @@
     <MESSAGE value="add real nginx monitoring" />
     <MESSAGE value="upgrade php" />
     <MESSAGE value="try fix artisan entry point for testing" />
-    <option name="LAST_COMMIT_MESSAGE" value="try fix artisan entry point for testing" />
+    <MESSAGE value="update php" />
+    <option name="LAST_COMMIT_MESSAGE" value="update php" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -1035,13 +1035,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2457">
-          <caret line="117" column="38" selection-start-line="117" selection-start-column="38" selection-end-line="117" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/docker-compose.dev.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3549">
@@ -1084,10 +1077,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="619">
+          <caret line="200" column="9" selection-start-line="200" selection-start-column="9" selection-end-line="200" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/laravel-artisan/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="9" selection-start-column="9" selection-end-column="14" />
+        <state relative-caret-position="138">
+          <caret line="9" column="28" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="28" />
         </state>
       </provider>
     </entry>
