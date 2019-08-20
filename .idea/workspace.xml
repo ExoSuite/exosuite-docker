@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="3210a84e-5e86-4379-ac7d-7a9044aa39da" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.dev.windows.vmware.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.dev.windows.vmware.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel-artisan/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/laravel-artisan/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php-fpm/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/php-fpm/Dockerfile" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,10 +28,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="1440" />
-    <option name="height" value="900" />
   </component>
   <component name="ProjectId" id="1OrmkKBRaNuyTU6xy92bXWVioXT" />
   <component name="ProjectLevelVcsManager">
@@ -231,14 +227,9 @@
       <workItem from="1564744234110" duration="23000" />
       <workItem from="1564744272359" duration="53000" />
       <workItem from="1564744339981" duration="52000" />
-      <workItem from="1565691420871" duration="2432000" />
-    </task>
-    <task id="LOCAL-00075" summary="staging">
-      <created>1541983779457</created>
-      <option name="number" value="00075" />
-      <option name="presentableId" value="LOCAL-00075" />
-      <option name="project" value="LOCAL" />
-      <updated>1541983779457</updated>
+      <workItem from="1565691420871" duration="2521000" />
+      <workItem from="1565696984540" duration="7000" />
+      <workItem from="1566335331102" duration="164000" />
     </task>
     <task id="LOCAL-00076" summary="staging">
       <created>1541995639379</created>
@@ -576,7 +567,14 @@
       <option name="project" value="LOCAL" />
       <updated>1563199196896</updated>
     </task>
-    <option name="localTasksCounter" value="124" />
+    <task id="LOCAL-00124" summary="upgrade elasticsearch">
+      <created>1565695272733</created>
+      <option name="number" value="00124" />
+      <option name="presentableId" value="LOCAL-00124" />
+      <option name="project" value="LOCAL" />
+      <updated>1565695272734</updated>
+    </task>
+    <option name="localTasksCounter" value="125" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -597,7 +595,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="bump version" />
     <MESSAGE value="add exosuite-elasticsearch" />
     <MESSAGE value="php 7.3" />
     <MESSAGE value="update laravel artisan" />
@@ -622,7 +619,8 @@
     <MESSAGE value="update php redis" />
     <MESSAGE value="update php" />
     <MESSAGE value="upgrade php version" />
-    <option name="LAST_COMMIT_MESSAGE" value="upgrade php version" />
+    <MESSAGE value="upgrade elasticsearch" />
+    <option name="LAST_COMMIT_MESSAGE" value="upgrade elasticsearch" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
