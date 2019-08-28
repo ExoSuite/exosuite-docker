@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3210a84e-5e86-4379-ac7d-7a9044aa39da" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/exosuite.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/exosuite.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/laravel-artisan/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/laravel-artisan/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/php-fpm/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/php-fpm/Dockerfile" afterDir="false" />
@@ -43,6 +45,9 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
@@ -230,6 +235,8 @@
       <workItem from="1565691420871" duration="2521000" />
       <workItem from="1565696984540" duration="7000" />
       <workItem from="1566335331102" duration="164000" />
+      <workItem from="1566992236079" duration="89000" />
+      <workItem from="1566992340130" duration="1858000" />
     </task>
     <task id="LOCAL-00076" summary="staging">
       <created>1541995639379</created>

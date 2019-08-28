@@ -4,3 +4,4 @@ docker-compose.yml
 !/prod/docker-compose.yml
 !staging/docker-compose.yml
 !/staging/docker-compose.yml
+/venv/
