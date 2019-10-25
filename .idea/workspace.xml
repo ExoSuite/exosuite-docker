@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3210a84e-5e86-4379-ac7d-7a9044aa39da" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/exosuite.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/exosuite.iml" afterDir="false" />
+    <list default="true" id="3210a84e-5e86-4379-ac7d-7a9044aa39da" name="Default Changelist" comment="upgrade for `spatie/laravel-medialibrary`">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/laravel-artisan/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/laravel-artisan/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/php-fpm/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/php-fpm/Dockerfile" afterDir="false" />
@@ -236,14 +234,13 @@
       <workItem from="1565696984540" duration="7000" />
       <workItem from="1566335331102" duration="164000" />
       <workItem from="1566992236079" duration="89000" />
-      <workItem from="1566992340130" duration="1858000" />
-    </task>
-    <task id="LOCAL-00076" summary="staging">
-      <created>1541995639379</created>
-      <option name="number" value="00076" />
-      <option name="presentableId" value="LOCAL-00076" />
-      <option name="project" value="LOCAL" />
-      <updated>1541995639380</updated>
+      <workItem from="1566992340130" duration="2325000" />
+      <workItem from="1566994863508" duration="30000" />
+      <workItem from="1566997102033" duration="263000" />
+      <workItem from="1566999965080" duration="1055000" />
+      <workItem from="1567257692403" duration="260000" />
+      <workItem from="1568978461153" duration="846000" />
+      <workItem from="1572004993822" duration="1003000" />
     </task>
     <task id="LOCAL-00077" summary="revert api.exosuite.conf">
       <created>1541997353067</created>
@@ -581,7 +578,14 @@
       <option name="project" value="LOCAL" />
       <updated>1565695272734</updated>
     </task>
-    <option name="localTasksCounter" value="125" />
+    <task id="LOCAL-00125" summary="upgrade for `spatie/laravel-medialibrary`">
+      <created>1566994501092</created>
+      <option name="number" value="00125" />
+      <option name="presentableId" value="LOCAL-00125" />
+      <option name="project" value="LOCAL" />
+      <updated>1566994501092</updated>
+    </task>
+    <option name="localTasksCounter" value="126" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -602,7 +606,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="add exosuite-elasticsearch" />
     <MESSAGE value="php 7.3" />
     <MESSAGE value="update laravel artisan" />
     <MESSAGE value="Remove http header from nginx conf" />
@@ -627,7 +630,8 @@
     <MESSAGE value="update php" />
     <MESSAGE value="upgrade php version" />
     <MESSAGE value="upgrade elasticsearch" />
-    <option name="LAST_COMMIT_MESSAGE" value="upgrade elasticsearch" />
+    <MESSAGE value="upgrade for `spatie/laravel-medialibrary`" />
+    <option name="LAST_COMMIT_MESSAGE" value="upgrade for `spatie/laravel-medialibrary`" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
